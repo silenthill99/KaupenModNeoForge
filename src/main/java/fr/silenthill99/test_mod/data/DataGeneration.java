@@ -1,9 +1,11 @@
 package fr.silenthill99.test_mod.data;
 
-import com.google.common.eventbus.Subscribe;
 import fr.silenthill99.test_mod.Main;
+import fr.silenthill99.test_mod.data.loot_tables.LootTableGenerator;
+import fr.silenthill99.test_mod.data.models_and_blockstates.BlockStateGenerator;
 import fr.silenthill99.test_mod.data.models_and_blockstates.ItemModelGenerator;
 import fr.silenthill99.test_mod.data.recipes.RecipeGenerator;
+import fr.silenthill99.test_mod.data.tags.BlockTagGenerator;
 import net.minecraft.core.HolderLookup;
 import net.minecraft.data.DataGenerator;
 import net.minecraft.data.PackOutput;
@@ -27,6 +29,9 @@ public class DataGeneration {
         boolean serveur = event.includeServer();
 
         generator.addProvider(client, new ItemModelGenerator(packOutput, existingFileHelper));
+        generator.addProvider(client, new BlockStateGenerator(packOutput, existingFileHelper));
         generator.addProvider(serveur, new RecipeGenerator(packOutput, lookupProvider));
+        generator.addProvider(serveur, new LootTableGenerator(packOutput, lookupProvider));
+        generator.addProvider(serveur, new BlockTagGenerator(packOutput, lookupProvider, existingFileHelper));
     }
 }

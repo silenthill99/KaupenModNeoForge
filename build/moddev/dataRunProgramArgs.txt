@@ -7,7 +7,7 @@ forgedatauserdev
 --assetIndex
 17
 --assetsDir
-D:\\Gradle\\caches\\neoformruntime\\assets
+C:\\Users\\flori\\.gradle\\caches\\neoformruntime\\assets
 --gameDir
 .
 --fml.neoForgeVersion
@@ -24,6 +24,6 @@ D:\\Gradle\\caches\\neoformruntime\\assets
 test_mod
 --all
 --output
-"D:\\Minecraft\\mods minecraft\\Kaupen Mod NeoForge\\src\\generated\\resources"
+"C:\\Users\\flori\\OneDrive\\Documents\\Minecraft\\Mods\\Kaupen Mod NeoForge\\src\\generated\\resources"
 --existing
-"D:\\Minecraft\\mods minecraft\\Kaupen Mod NeoForge\\src\\main\\resources"
+"C:\\Users\\flori\\OneDrive\\Documents\\Minecraft\\Mods\\Kaupen Mod NeoForge\\src\\main\\resources"
