@@ -3,6 +3,7 @@ package fr.silenthill99.test_mod;
 import com.mojang.logging.LogUtils;
 import fr.silenthill99.test_mod.init.ModBlocks;
 import fr.silenthill99.test_mod.init.ModItems;
+import fr.silenthill99.test_mod.utils.ModCreativeModTabs;
 import net.minecraft.world.item.CreativeModeTabs;
 import net.neoforged.api.distmarker.Dist;
 import net.neoforged.bus.api.IEventBus;
@@ -32,6 +33,7 @@ public class Main {
         modContainer.registerConfig(ModConfig.Type.COMMON, Config.SPEC);
         ModItems.ITEMS.register(modEventBus);
         ModBlocks.BLOCKS.register(modEventBus);
+        ModCreativeModTabs.CREATIVE_MODE_TABS.register(modEventBus);
     }
 
     private void commonSetup(final FMLCommonSetupEvent event) {

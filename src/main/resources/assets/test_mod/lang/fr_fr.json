@@ -1,6 +1,8 @@
 {
   "block.test_mod.bismuth_block": "Bloc de bismuth",
   "block.test_mod.bismuth_ore": "Minerai de bismuth",
+  "creativetab.test_mod.bismuth_blocks": "Bismuth blocks",
+  "creativetab.test_mod.bismuth_items": "Bismuth items",
   "item.test_mod.bismuth": "Bismuth",
   "item.test_mod.raw_bismuth": "Bismuth brut"
 }
