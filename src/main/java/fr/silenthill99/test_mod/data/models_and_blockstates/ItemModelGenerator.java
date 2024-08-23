@@ -17,6 +17,7 @@ public class ItemModelGenerator extends ItemModelProvider {
     protected void registerModels() {
         simpleItem(ModItems.BISMUTH);
         simpleItem(ModItems.RAW_BISMUTH);
+        simpleItem(ModItems.CHISEL);
     }
 
     private void simpleItem(DeferredItem<Item> item) {
