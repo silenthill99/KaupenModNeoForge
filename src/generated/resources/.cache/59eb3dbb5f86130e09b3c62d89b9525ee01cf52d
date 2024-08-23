@@ -1,3 +1,4 @@
-// 1.21	2024-08-13T23:52:18.2804441	Loot Tables
+// 1.21	2024-08-21T14:36:29.4132112	Loot Tables
 caa679f3d31298e25a57176b2a6f3fe31f32ac33 data/test_mod/loot_table/blocks/bismuth_block.json
-73644c1752a988a9b78b12fd1a571ad27fd3283e data/test_mod/loot_table/blocks/bismuth_ore.json
+84c85157d4deadaa9a770e80aa5984cbe45954c3 data/test_mod/loot_table/blocks/bismuth_deepslate_ore.json
+801b6ac79b77c49728f6bdf7e8a4ae26878459c0 data/test_mod/loot_table/blocks/bismuth_ore.json

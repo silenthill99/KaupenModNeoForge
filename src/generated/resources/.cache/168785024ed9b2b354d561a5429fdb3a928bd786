@@ -1,7 +1,10 @@
-// 1.21	2024-08-13T23:52:18.2767314	Block States: test_mod
+// 1.21	2024-08-21T01:19:43.3897342	Block States: test_mod
 58ed7eb71cc008b51e2fed4384e0a74ef39b20f0 assets/test_mod/blockstates/bismuth_block.json
+295b2d1b462d1aeb8c2f36839e8f077a7d6876b3 assets/test_mod/blockstates/bismuth_deepslate_ore.json
 63b449de5e445fd6408fca8449ad8fc4c88c3f27 assets/test_mod/blockstates/bismuth_ore.json
 6053efda610dd7a8da6f87bfb25e7e963c1d9f06 assets/test_mod/models/block/bismuth_block.json
+146e890225e433a8a22417d21d69039f3784fc1c assets/test_mod/models/block/bismuth_deepslate_ore.json
 b6a4e4aeb96a930671eb6b9f6d19e383137933e1 assets/test_mod/models/block/bismuth_ore.json
 7779d7493e2b49232620be53868b842cb68f40d0 assets/test_mod/models/item/bismuth_block.json
+69513ea1010494fd759a2da1c026bf16ec08237f assets/test_mod/models/item/bismuth_deepslate_ore.json
 946af47df0bf5b6f735b49e001fd2e1106553fc3 assets/test_mod/models/item/bismuth_ore.json

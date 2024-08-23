@@ -15,5 +15,6 @@ public class BlockStateGenerator extends BlockStateProvider {
     protected void registerStatesAndModels() {
         simpleBlockWithItem(ModBlocks.BISMUTH_BLOCK.get(), cubeAll(ModBlocks.BISMUTH_BLOCK.get()));
         simpleBlockWithItem(ModBlocks.BISMUTH_ORE.get(), cubeAll(ModBlocks.BISMUTH_ORE.get()));
+        simpleBlockWithItem(ModBlocks.BISMUTH_DEEPSLATE_ORE.get(), cubeAll(ModBlocks.BISMUTH_DEEPSLATE_ORE.get()));
     }
 }

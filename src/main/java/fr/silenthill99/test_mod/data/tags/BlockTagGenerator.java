@@ -18,7 +18,16 @@ public class BlockTagGenerator extends BlockTagsProvider {
 
     @Override
     protected void addTags(HolderLookup.Provider provider) {
-        tag(BlockTags.MINEABLE_WITH_PICKAXE)
-                .add(ModBlocks.BISMUTH_BLOCK.get(), ModBlocks.BISMUTH_ORE.get());
+        tag(BlockTags.MINEABLE_WITH_PICKAXE).add(
+                ModBlocks.BISMUTH_BLOCK.get(),
+                ModBlocks.BISMUTH_ORE.get(),
+                ModBlocks.BISMUTH_DEEPSLATE_ORE.get()
+        );
+        tag(BlockTags.NEEDS_IRON_TOOL).add(
+                ModBlocks.BISMUTH_ORE.get()
+        );
+        tag(BlockTags.NEEDS_DIAMOND_TOOL).add(
+                ModBlocks.BISMUTH_DEEPSLATE_ORE.get()
+        );
     }
 }
