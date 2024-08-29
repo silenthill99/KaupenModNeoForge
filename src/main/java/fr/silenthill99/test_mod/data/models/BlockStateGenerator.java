@@ -1,4 +1,4 @@
-package fr.silenthill99.test_mod.data.models_and_blockstates;
+package fr.silenthill99.test_mod.data.models;
 
 import fr.silenthill99.test_mod.Main;
 import fr.silenthill99.test_mod.init.ModBlocks;
@@ -16,5 +16,6 @@ public class BlockStateGenerator extends BlockStateProvider {
         simpleBlockWithItem(ModBlocks.BISMUTH_BLOCK.get(), cubeAll(ModBlocks.BISMUTH_BLOCK.get()));
         simpleBlockWithItem(ModBlocks.BISMUTH_ORE.get(), cubeAll(ModBlocks.BISMUTH_ORE.get()));
         simpleBlockWithItem(ModBlocks.BISMUTH_DEEPSLATE_ORE.get(), cubeAll(ModBlocks.BISMUTH_DEEPSLATE_ORE.get()));
+        simpleBlockWithItem(ModBlocks.MAGIC_BLOCK.get(), cubeAll(ModBlocks.MAGIC_BLOCK.get()));
     }
 }

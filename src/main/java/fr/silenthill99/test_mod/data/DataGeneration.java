@@ -2,8 +2,8 @@ package fr.silenthill99.test_mod.data;
 
 import fr.silenthill99.test_mod.Main;
 import fr.silenthill99.test_mod.data.loot_tables.LootTableGenerator;
-import fr.silenthill99.test_mod.data.models_and_blockstates.BlockStateGenerator;
-import fr.silenthill99.test_mod.data.models_and_blockstates.ItemModelGenerator;
+import fr.silenthill99.test_mod.data.models.BlockStateGenerator;
+import fr.silenthill99.test_mod.data.models.ItemModelGenerator;
 import fr.silenthill99.test_mod.data.recipes.RecipeGenerator;
 import fr.silenthill99.test_mod.data.tags.BlockTagGenerator;
 import net.minecraft.core.HolderLookup;
@@ -16,6 +16,7 @@ import net.neoforged.neoforge.data.event.GatherDataEvent;
 
 import java.util.concurrent.CompletableFuture;
 
+@SuppressWarnings("unused")
 @EventBusSubscriber(modid = Main.MODID, bus= EventBusSubscriber.Bus.MOD)
 public class DataGeneration {
     @SubscribeEvent

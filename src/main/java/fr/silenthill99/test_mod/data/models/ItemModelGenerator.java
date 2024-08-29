@@ -1,4 +1,4 @@
-package fr.silenthill99.test_mod.data.models_and_blockstates;
+package fr.silenthill99.test_mod.data.models;
 
 import fr.silenthill99.test_mod.Main;
 import fr.silenthill99.test_mod.init.ModItems;

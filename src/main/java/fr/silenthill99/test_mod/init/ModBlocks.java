@@ -1,6 +1,7 @@
 package fr.silenthill99.test_mod.init;
 
 import fr.silenthill99.test_mod.Main;
+import fr.silenthill99.test_mod.custom.block.MagicBlock;
 import net.minecraft.util.valueproviders.UniformInt;
 import net.minecraft.world.item.BlockItem;
 import net.minecraft.world.item.Item;
@@ -28,6 +29,9 @@ public class ModBlocks {
     public static final DeferredBlock<Block> BISMUTH_DEEPSLATE_ORE = registerBlock("bismuth_deepslate_ore",
             () -> new DropExperienceBlock(UniformInt.of(2, 4),
                     BlockBehaviour.Properties.of().strength(3).requiresCorrectToolForDrops().sound(SoundType.DEEPSLATE)));
+
+    public static final DeferredBlock<Block> MAGIC_BLOCK = registerBlock("magic_block",
+            () -> new MagicBlock(BlockBehaviour.Properties.of().strength(2).requiresCorrectToolForDrops()));
 
     private static <T extends Block> DeferredBlock<T> registerBlock(String name, Supplier<T> supplier) {
         DeferredBlock<T> block = BLOCKS.register(name, supplier);

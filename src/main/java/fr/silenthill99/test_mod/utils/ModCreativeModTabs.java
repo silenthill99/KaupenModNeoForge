@@ -12,6 +12,7 @@ import net.neoforged.neoforge.registries.DeferredRegister;
 
 import java.util.function.Supplier;
 
+@SuppressWarnings("unused")
 public class ModCreativeModTabs {
 
     public static final DeferredRegister<CreativeModeTab> CREATIVE_MODE_TABS =
@@ -36,6 +37,7 @@ public class ModCreativeModTabs {
                         output.accept(ModBlocks.BISMUTH_BLOCK);
                         output.accept(ModBlocks.BISMUTH_ORE);
                         output.accept(ModBlocks.BISMUTH_DEEPSLATE_ORE);
+                        output.accept(ModBlocks.MAGIC_BLOCK);
                     })
                     .withTabsBefore(ResourceLocation.fromNamespaceAndPath(Main.MODID, "bismuth_items_tab"))
                     .build());

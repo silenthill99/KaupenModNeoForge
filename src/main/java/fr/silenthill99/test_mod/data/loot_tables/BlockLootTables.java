@@ -16,6 +16,7 @@ import net.minecraft.world.level.storage.loot.functions.ApplyBonusCount;
 import net.minecraft.world.level.storage.loot.functions.SetItemCountFunction;
 import net.minecraft.world.level.storage.loot.providers.number.UniformGenerator;
 import net.neoforged.neoforge.registries.DeferredHolder;
+import org.jetbrains.annotations.NotNull;
 
 import java.util.Set;
 import java.util.stream.Collectors;
@@ -31,10 +32,11 @@ public class BlockLootTables extends BlockLootSubProvider {
         dropSelf(ModBlocks.BISMUTH_BLOCK.get());
         add(ModBlocks.BISMUTH_DEEPSLATE_ORE.get(), block -> createDropLikeCopperOre(block, ModItems.RAW_BISMUTH.get()));
         add(ModBlocks.BISMUTH_ORE.get(), block -> createDropLikeCopperOre(block, ModItems.RAW_BISMUTH.get()));
+        dropSelf(ModBlocks.MAGIC_BLOCK.get());
     }
 
     @Override
-    protected Iterable<Block> getKnownBlocks() {
+    protected @NotNull Iterable<Block> getKnownBlocks() {
         return ModBlocks.BLOCKS.getEntries()
                 .stream()
                 .map(DeferredHolder::get)
