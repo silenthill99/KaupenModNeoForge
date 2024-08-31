@@ -18,6 +18,9 @@ public class ItemModelGenerator extends ItemModelProvider {
         simpleItem(ModItems.BISMUTH);
         simpleItem(ModItems.RAW_BISMUTH);
         simpleItem(ModItems.CHISEL);
+        simpleItem(ModItems.RADISH);
+        simpleItem(ModItems.FROSTFIRE_ICE);
+        simpleItem(ModItems.STARLIGHT_ASHES);
     }
 
     private void simpleItem(DeferredItem<Item> item) {

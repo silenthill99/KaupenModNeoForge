@@ -6,6 +6,9 @@
   "creativetab.test_mod.bismuth_blocks": "Bismuth blocks",
   "creativetab.test_mod.bismuth_items": "Bismuth items",
   "item.test_mod.bismuth": "Bismuth",
+  "item.test_mod.frostfire_ice": "Frostfire ice",
   "item.test_mod.chisel": "Biseau",
-  "item.test_mod.raw_bismuth": "Bismuth brut"
+  "item.test_mod.radish": "Radis",
+  "item.test_mod.raw_bismuth": "Bismuth brut",
+  "item.test_mod.starlight_ashes": "Starlight ashes"
 }

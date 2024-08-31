@@ -1,4 +1,7 @@
-// 1.21	2024-08-23T19:44:47.1654539	Item Models: test_mod
+// 1.21	2024-08-31T20:26:42.7425888	Item Models: test_mod
 f8a798d7b3ca106781e6a133458b50e5a10053f1 assets/test_mod/models/item/bismuth.json
 cf25be4459dcddc4ee9d8d01d4fbd9edf8359e79 assets/test_mod/models/item/chisel.json
+e5bf8155b0f81368de259174de3dc055dd83c830 assets/test_mod/models/item/frostfire_ice.json
+bd657a685695b07200cd311d7969c13bd43a5c20 assets/test_mod/models/item/radish.json
 ad780a10f5d238d15a3e420a6a8c169674a77109 assets/test_mod/models/item/raw_bismuth.json
+00263046a3e3dcd71ff1f3dca3155ef161760cf8 assets/test_mod/models/item/starlight_ashes.json
