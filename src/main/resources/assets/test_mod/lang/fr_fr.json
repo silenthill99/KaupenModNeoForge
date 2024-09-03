@@ -10,5 +10,9 @@
   "item.test_mod.chisel": "Biseau",
   "item.test_mod.radish": "Radis",
   "item.test_mod.raw_bismuth": "Bismuth brut",
-  "item.test_mod.starlight_ashes": "Starlight ashes"
+  "item.test_mod.starlight_ashes": "Starlight ashes",
+  "tooltip.test_mod.chisel": "Cet item peut ciseler certains Blocs en Briques",
+  "tooltip.test_mod.chisel.shift_down": "Appuyez sur §9Shift§f pour plus d'informations !",
+  "tooltip.test_mod.magic_block.tooltip": "Ce bloc est très §9MAGIQUE",
+  "tooltip.test_mod.radish.tooltip": "Tastes really great!"
 }
