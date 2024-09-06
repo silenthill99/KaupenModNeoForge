@@ -7,6 +7,7 @@ import fr.silenthill99.test_mod.data.models.BlockStateGenerator;
 import fr.silenthill99.test_mod.data.models.ItemModelGenerator;
 import fr.silenthill99.test_mod.data.recipes.RecipeGenerator;
 import fr.silenthill99.test_mod.data.tags.BlockTagGenerator;
+import fr.silenthill99.test_mod.data.tags.ItemTagsGenerator;
 import net.minecraft.core.HolderLookup;
 import net.minecraft.data.DataGenerator;
 import net.minecraft.data.PackOutput;
@@ -18,7 +19,7 @@ import net.neoforged.neoforge.data.event.GatherDataEvent;
 import java.util.concurrent.CompletableFuture;
 
 @SuppressWarnings("unused")
-@EventBusSubscriber(modid = Main.MODID, bus= EventBusSubscriber.Bus.MOD)
+@EventBusSubscriber(modid = Main.MODID, bus = EventBusSubscriber.Bus.MOD)
 public class DataGeneration {
     @SubscribeEvent
     public static void gatherData(final GatherDataEvent event) {
@@ -34,7 +35,8 @@ public class DataGeneration {
         generator.addProvider(client, new BlockStateGenerator(packOutput, existingFileHelper));
         generator.addProvider(serveur, new RecipeGenerator(packOutput, lookupProvider));
         generator.addProvider(serveur, new LootTableGenerator(packOutput, lookupProvider));
-        generator.addProvider(serveur, new BlockTagGenerator(packOutput, lookupProvider, existingFileHelper));
+        BlockTagGenerator blockTagGenerator = generator.addProvider(serveur, new BlockTagGenerator(packOutput, lookupProvider, existingFileHelper));
+        generator.addProvider(serveur, new ItemTagsGenerator(packOutput, lookupProvider, blockTagGenerator.contentsGetter()));
         generator.addProvider(serveur, new DataMapGenerator(packOutput, lookupProvider));
     }
 }
