@@ -1,4 +1,4 @@
-// 1.21	2024-08-21T01:30:31.000465	Tags for minecraft:block mod id test_mod
-bcd125b0cc3f7d76796a009012f953f3c5036dd5 data/minecraft/tags/block/mineable/pickaxe.json
+// 1.21	2024-09-10T18:21:36.942711	Tags for minecraft:block mod id test_mod
+2c6d3f774afeeb8803636947604aa38e71ca1daf data/minecraft/tags/block/mineable/pickaxe.json
 ff8ffa5da730f39f934250c10ff993db772e706b data/minecraft/tags/block/needs_diamond_tool.json
 9c5f3f668427cbcc4c22c81abeaa29b169c54197 data/minecraft/tags/block/needs_iron_tool.json

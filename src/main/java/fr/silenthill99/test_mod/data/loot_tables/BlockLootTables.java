@@ -30,8 +30,8 @@ public class BlockLootTables extends BlockLootSubProvider {
     @Override
     protected void generate() {
         dropSelf(ModBlocks.BISMUTH_BLOCK.get());
-        add(ModBlocks.BISMUTH_DEEPSLATE_ORE.get(), block -> createDropLikeCopperOre(block, ModItems.RAW_BISMUTH.get()));
-        add(ModBlocks.BISMUTH_ORE.get(), block -> createDropLikeCopperOre(block, ModItems.RAW_BISMUTH.get()));
+        add(ModBlocks.BISMUTH_DEEPSLATE_ORE.get(), block -> createDropLikeCopperOre(block, ModItems.RAW_BISMUTH.get(), 2, 5));
+        add(ModBlocks.BISMUTH_ORE.get(), block -> createDropLikeCopperOre(block, ModItems.RAW_BISMUTH.get(), 2, 5));
         dropSelf(ModBlocks.MAGIC_BLOCK.get());
     }
 
@@ -43,9 +43,12 @@ public class BlockLootTables extends BlockLootSubProvider {
                 .collect(Collectors.toList());
     }
 
-    protected LootTable.Builder createDropLikeCopperOre(Block block, Item item) {
+    protected LootTable.Builder createDropLikeCopperOre(Block block, Item item, float minDrops, float maxDrops) {
         HolderLookup.RegistryLookup<Enchantment> registrylookup = this.registries.lookupOrThrow(Registries.ENCHANTMENT);
-        return this.createSilkTouchDispatchTable(block, this.applyExplosionDecay(block, LootItem.lootTableItem(item).apply(SetItemCountFunction.setCount(UniformGenerator.between(2.0F, 5.0F))).apply(ApplyBonusCount.addOreBonusCount(registrylookup.getOrThrow(Enchantments.FORTUNE)))));
+        return this.createSilkTouchDispatchTable(block,
+                this.applyExplosionDecay(block, LootItem.lootTableItem(item)
+                        .apply(SetItemCountFunction.setCount(UniformGenerator.between(minDrops, maxDrops)))
+                        .apply(ApplyBonusCount.addOreBonusCount(registrylookup.getOrThrow(Enchantments.FORTUNE)))));
     }
 
 }

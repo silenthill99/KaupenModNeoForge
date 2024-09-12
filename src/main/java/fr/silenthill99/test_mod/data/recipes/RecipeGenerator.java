@@ -1,22 +1,28 @@
 package fr.silenthill99.test_mod.data.recipes;
 
-import fr.silenthill99.test_mod.Main;
 import fr.silenthill99.test_mod.init.ModBlocks;
 import fr.silenthill99.test_mod.init.ModItems;
 import net.minecraft.advancements.critereon.InventoryChangeTrigger;
 import net.minecraft.core.HolderLookup;
 import net.minecraft.data.PackOutput;
 import net.minecraft.data.recipes.*;
-import net.minecraft.resources.ResourceLocation;
-import net.minecraft.world.item.crafting.Ingredient;
+import net.minecraft.world.level.ItemLike;
+import net.neoforged.neoforge.common.conditions.IConditionBuilder;
 import org.jetbrains.annotations.NotNull;
 
+import java.util.List;
 import java.util.concurrent.CompletableFuture;
 
-public class RecipeGenerator extends RecipeProvider {
+public class RecipeGenerator extends RecipeProvider implements IConditionBuilder {
     public RecipeGenerator(PackOutput output, CompletableFuture<HolderLookup.Provider> registries) {
         super(output, registries);
     }
+
+    List<ItemLike> BISMUTH_SMELTABLES = List.of(
+            ModItems.RAW_BISMUTH,
+            ModBlocks.BISMUTH_ORE,
+            ModBlocks.BISMUTH_DEEPSLATE_ORE
+    );
 
     @Override
     protected void buildRecipes(@NotNull RecipeOutput recipeOutput) {
@@ -33,26 +39,10 @@ public class RecipeGenerator extends RecipeProvider {
                 .unlockedBy("unlock", InventoryChangeTrigger.TriggerInstance.hasItems(ModItems.BISMUTH))
                 .save(recipeOutput);
 
-        SimpleCookingRecipeBuilder.blasting(Ingredient.of(ModBlocks.BISMUTH_ORE), RecipeCategory.MISC, ModItems.BISMUTH,
-                        0.25f, 100)
-                .unlockedBy("unlock", InventoryChangeTrigger.TriggerInstance.hasItems(ModBlocks.BISMUTH_ORE))
-                .save(recipeOutput, ResourceLocation.fromNamespaceAndPath(Main.MODID, "bismuth_from_blasting_bismuth_ore"));
-
-        SimpleCookingRecipeBuilder.blasting(Ingredient.of(ModItems.RAW_BISMUTH), RecipeCategory.MISC, ModItems.BISMUTH,
-                        0.25f, 100)
-                .unlockedBy("unlock", InventoryChangeTrigger.TriggerInstance.hasItems(ModItems.RAW_BISMUTH))
-                .save(recipeOutput, ResourceLocation.fromNamespaceAndPath(Main.MODID, "bismuth_from_blasting_raw_bismuth"));
-
-        SimpleCookingRecipeBuilder.smelting(Ingredient.of(ModBlocks.BISMUTH_ORE), RecipeCategory.MISC, ModItems.BISMUTH,
-                        0.25f, 200)
-                .unlockedBy("unlock", InventoryChangeTrigger.TriggerInstance.hasItems(ModBlocks.BISMUTH_ORE))
-                .save(recipeOutput, ResourceLocation.fromNamespaceAndPath(Main.MODID, "bismuth_from_smelting_bismuth_ore"));
-
-        SimpleCookingRecipeBuilder.smelting(Ingredient.of(ModItems.RAW_BISMUTH), RecipeCategory.MISC, ModItems.BISMUTH,
-                        0.25f, 200)
-                .unlockedBy("unlock", InventoryChangeTrigger.TriggerInstance.hasItems(ModItems.RAW_BISMUTH))
-                .save(recipeOutput, ResourceLocation.fromNamespaceAndPath(Main.MODID, "bismuth_from_smelting_raw_bismuth"));
-
+        oreSmelting(recipeOutput, BISMUTH_SMELTABLES, RecipeCategory.MISC, ModItems.BISMUTH.get(), 0.25f, 200,
+                "bismuth");
+        oreBlasting(recipeOutput, BISMUTH_SMELTABLES, RecipeCategory.MISC, ModItems.BISMUTH.get(), 0.25f, 100,
+                "bismuth");
 
     }
 }
