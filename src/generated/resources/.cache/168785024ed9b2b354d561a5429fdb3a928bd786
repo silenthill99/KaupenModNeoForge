@@ -1,4 +1,4 @@
-// 1.21	2024-09-13T21:48:49.3866924	Block States: test_mod
+// 1.21	2024-09-13T21:54:00.1503825	Block States: test_mod
 58ed7eb71cc008b51e2fed4384e0a74ef39b20f0 assets/test_mod/blockstates/bismuth_block.json
 fac9a5a99eadf697246f277fb7d55ed23235d3a6 assets/test_mod/blockstates/bismuth_button.json
 295b2d1b462d1aeb8c2f36839e8f077a7d6876b3 assets/test_mod/blockstates/bismuth_deepslate_ore.json
@@ -57,6 +57,6 @@ def21e0643821815b328d076594008211c0a5102 assets/test_mod/models/item/bismuth_fen
 f76e8aeea3783b6e47bf38a2d75fffe39ac19218 assets/test_mod/models/item/bismuth_pressure_plate.json
 1edfbc103389df14b30a6e69cc09593d6a7d264f assets/test_mod/models/item/bismuth_slab.json
 060f554b111e84ac721afecd8ea43bbab3d5776b assets/test_mod/models/item/bismuth_stairs.json
-8c318ebf759905ba0785488fd50e12f89f6fd1b1 assets/test_mod/models/item/bismuth_trapdoor.json
+457944fb179968dd39d388af1409e98881dfbd42 assets/test_mod/models/item/bismuth_trapdoor.json
 924edcf9863c3e52976499916a3db6ee64349eda assets/test_mod/models/item/bismuth_wall.json
 6381b30856cf49503a0bf0adbc43d07f0b66184f assets/test_mod/models/item/magic_block.json
