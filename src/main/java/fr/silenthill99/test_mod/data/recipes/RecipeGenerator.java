@@ -98,10 +98,12 @@ public class RecipeGenerator extends RecipeProvider implements IConditionBuilder
             String suffix
     ) {
         for (ItemLike itemlike : ingredients) {
-            SimpleCookingRecipeBuilder.generic(Ingredient.of(itemlike), category, result, experience, cookingTime, serializer, recipeFactory)
+            SimpleCookingRecipeBuilder.generic(Ingredient.of(itemlike), category, result, experience, cookingTime,
+                            serializer, recipeFactory)
                     .group(group)
                     .unlockedBy(getHasName(itemlike), has(itemlike))
-                    .save(recipeOutput, ResourceLocation.fromNamespaceAndPath(Main.MODID, getItemName(result) + suffix + "_" + getItemName(itemlike)));
+                    .save(recipeOutput, ResourceLocation.fromNamespaceAndPath(Main.MODID,
+                            getItemName(result) + suffix + "_" + getItemName(itemlike)));
         }
     }
 }
