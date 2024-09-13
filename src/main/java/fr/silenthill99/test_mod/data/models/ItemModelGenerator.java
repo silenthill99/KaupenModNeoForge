@@ -1,6 +1,7 @@
 package fr.silenthill99.test_mod.data.models;
 
 import fr.silenthill99.test_mod.Main;
+import fr.silenthill99.test_mod.init.ModBlocks;
 import fr.silenthill99.test_mod.init.ModItems;
 import net.minecraft.data.PackOutput;
 import net.minecraft.world.item.Item;
@@ -21,6 +22,7 @@ public class ItemModelGenerator extends ItemModelProvider {
         simpleItem(ModItems.RADISH);
         simpleItem(ModItems.FROSTFIRE_ICE);
         simpleItem(ModItems.STARLIGHT_ASHES);
+        basicItem(ModBlocks.BISMUTH_DOOR.asItem());
     }
 
     private void simpleItem(DeferredItem<Item> item) {

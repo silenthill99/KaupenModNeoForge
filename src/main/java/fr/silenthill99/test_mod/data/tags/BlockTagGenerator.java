@@ -31,5 +31,14 @@ public class BlockTagGenerator extends BlockTagsProvider {
         tag(BlockTags.NEEDS_DIAMOND_TOOL).add(
                 ModBlocks.BISMUTH_DEEPSLATE_ORE.get()
         );
+        tag(BlockTags.FENCES).add(
+                ModBlocks.BISMUTH_FENCE.get()
+        );
+        tag(BlockTags.WALLS).add(
+                ModBlocks.BISMUTH_WALL.get()
+        );
+        tag(BlockTags.FENCE_GATES).add(
+                ModBlocks.BISMUTH_FENCE_GATE.get()
+        );
     }
 }

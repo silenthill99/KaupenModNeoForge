@@ -33,6 +33,15 @@ public class BlockLootTables extends BlockLootSubProvider {
         add(ModBlocks.BISMUTH_DEEPSLATE_ORE.get(), block -> createDropLikeCopperOre(block, ModItems.RAW_BISMUTH.get(), 2, 5));
         add(ModBlocks.BISMUTH_ORE.get(), block -> createDropLikeCopperOre(block, ModItems.RAW_BISMUTH.get(), 2, 5));
         dropSelf(ModBlocks.MAGIC_BLOCK.get());
+        dropSelf(ModBlocks.BISMUTH_STAIRS.get());
+        add(ModBlocks.BISMUTH_SLAB.get(), this::createSlabItemTable);
+        dropSelf(ModBlocks.BISMUTH_PRESSURE_PLATE.get());
+        dropSelf(ModBlocks.BISMUTH_BUTTON.get());
+        dropSelf(ModBlocks.BISMUTH_FENCE.get());
+        dropSelf(ModBlocks.BISMUTH_FENCE_GATE.get());
+        dropSelf(ModBlocks.BISMUTH_WALL.get());
+        add(ModBlocks.BISMUTH_DOOR.get(), this::createDoorTable);
+        dropSelf(ModBlocks.BISMUTH_TRAPDOOR.get());
     }
 
     @Override
