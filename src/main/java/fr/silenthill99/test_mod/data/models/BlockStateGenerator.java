@@ -11,7 +11,10 @@ import net.neoforged.neoforge.client.model.generators.ModelFile;
 import net.neoforged.neoforge.common.data.ExistingFileHelper;
 import org.jetbrains.annotations.NotNull;
 
+
 public class BlockStateGenerator extends BlockStateProvider {
+    private String path;
+
     public BlockStateGenerator(PackOutput output, ExistingFileHelper exFileHelper) {
         super(output, Main.MODID, exFileHelper);
     }
@@ -57,14 +60,14 @@ public class BlockStateGenerator extends BlockStateProvider {
     @Override
     public void buttonBlock(@NotNull ButtonBlock block, @NotNull ResourceLocation texture) {
         super.buttonBlock(block, texture);
-        String path = BuiltInRegistries.BLOCK.getKey(block).getPath();
+        path = BuiltInRegistries.BLOCK.getKey(block).getPath();
         simpleBlockItem(block, models().buttonInventory(path + "_inventory", texture));
     }
 
     @Override
     public void fenceBlock(@NotNull FenceBlock block, @NotNull ResourceLocation texture) {
         super.fenceBlock(block, texture);
-        String path = BuiltInRegistries.BLOCK.getKey(block).getPath();
+        path = BuiltInRegistries.BLOCK.getKey(block).getPath();
         simpleBlockItem(block, models().fenceInventory(path + "_inventory", texture));
     }
 
@@ -77,7 +80,7 @@ public class BlockStateGenerator extends BlockStateProvider {
     @Override
     public void wallBlock(@NotNull WallBlock block, @NotNull ResourceLocation texture) {
         super.wallBlock(block, texture);
-        String path = BuiltInRegistries.BLOCK.getKey(block).getPath();
+        path = BuiltInRegistries.BLOCK.getKey(block).getPath();
         simpleBlockItem(block, models().wallInventory(path + "_inventory", texture));
     }
 
@@ -85,7 +88,7 @@ public class BlockStateGenerator extends BlockStateProvider {
     public void trapdoorBlockWithRenderType(@NotNull TrapDoorBlock block, @NotNull ResourceLocation texture,
                                             boolean orientable, @NotNull String renderType) {
         super.trapdoorBlockWithRenderType(block, texture, orientable, renderType);
-        String path = BuiltInRegistries.BLOCK.getKey(block).getPath();
+        path = BuiltInRegistries.BLOCK.getKey(block).getPath();
         simpleBlockItem(block, models().trapdoorOrientableBottom(path + "_bottom", texture));
     }
 }
