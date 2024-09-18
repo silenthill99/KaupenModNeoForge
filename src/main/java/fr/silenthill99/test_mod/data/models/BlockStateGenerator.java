@@ -1,12 +1,14 @@
 package fr.silenthill99.test_mod.data.models;
 
 import fr.silenthill99.test_mod.Main;
+import fr.silenthill99.test_mod.custom.block.BismuthLampBlock;
 import fr.silenthill99.test_mod.init.ModBlocks;
 import net.minecraft.core.registries.BuiltInRegistries;
 import net.minecraft.data.PackOutput;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.world.level.block.*;
 import net.neoforged.neoforge.client.model.generators.BlockStateProvider;
+import net.neoforged.neoforge.client.model.generators.ConfiguredModel;
 import net.neoforged.neoforge.client.model.generators.ModelFile;
 import net.neoforged.neoforge.common.data.ExistingFileHelper;
 import org.jetbrains.annotations.NotNull;
@@ -36,6 +38,7 @@ public class BlockStateGenerator extends BlockStateProvider {
                 modLoc("block/bismuth_door_top"), "cutout");
         trapdoorBlockWithRenderType(ModBlocks.BISMUTH_TRAPDOOR.get(), modLoc("block/bismuth_trapdoor"),
                 true, "cutout");
+        customLamp();
     }
 
     @Override
@@ -90,5 +93,18 @@ public class BlockStateGenerator extends BlockStateProvider {
         super.trapdoorBlockWithRenderType(block, texture, orientable, renderType);
         path = BuiltInRegistries.BLOCK.getKey(block).getPath();
         simpleBlockItem(block, models().trapdoorOrientableBottom(path + "_bottom", texture));
+    }
+
+    private void customLamp() {
+        getVariantBuilder(ModBlocks.BISMUTH_LAMP.get()).forAllStates(state -> {
+           if (state.getValue(BismuthLampBlock.CLICKED)) {
+               return new ConfiguredModel[]{new ConfiguredModel(models().cubeAll("bismuth_lamp_on",
+                       modLoc("block/bismuth_lamp_on")))};
+           } else {
+                return new ConfiguredModel[]{new ConfiguredModel(models().cubeAll("bismuth_lamp_off",
+                        modLoc("block/bismuth_lamp_off")))};
+           }
+        });
+        simpleBlockItem(ModBlocks.BISMUTH_LAMP.get(), models().cubeAll("bismuth_lamp_on", modLoc("block/bismuth_lamp_on")));
     }
 }

@@ -42,6 +42,7 @@ public class BlockLootTables extends BlockLootSubProvider {
         dropSelf(ModBlocks.BISMUTH_WALL.get());
         add(ModBlocks.BISMUTH_DOOR.get(), this::createDoorTable);
         dropSelf(ModBlocks.BISMUTH_TRAPDOOR.get());
+        dropSelf(ModBlocks.BISMUTH_LAMP.get());
     }
 
     @Override

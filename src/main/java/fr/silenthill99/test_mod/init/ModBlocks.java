@@ -1,6 +1,7 @@
 package fr.silenthill99.test_mod.init;
 
 import fr.silenthill99.test_mod.Main;
+import fr.silenthill99.test_mod.custom.block.BismuthLampBlock;
 import fr.silenthill99.test_mod.custom.block.MagicBlock;
 import net.minecraft.util.valueproviders.UniformInt;
 import net.minecraft.world.item.BlockItem;
@@ -59,6 +60,10 @@ public class ModBlocks {
     public static final DeferredBlock<TrapDoorBlock> BISMUTH_TRAPDOOR = registerBlock("bismuth_trapdoor",
             () -> new TrapDoorBlock(BlockSetType.IRON,
                     BlockBehaviour.Properties.of().strength(2).requiresCorrectToolForDrops().noOcclusion()));
+
+    public static final DeferredBlock<Block> BISMUTH_LAMP = registerBlock("bismuth_lamp",
+            () -> new BismuthLampBlock(BlockBehaviour.Properties.of().strength(2)
+                    .requiresCorrectToolForDrops().lightLevel(state -> state.getValue(BismuthLampBlock.CLICKED) ? 15 : 0)));
 
     private static <T extends Block> DeferredBlock<T> registerBlock(String name, Supplier<T> supplier) {
         DeferredBlock<T> block = BLOCKS.register(name, supplier);
