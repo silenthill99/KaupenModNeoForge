@@ -1,6 +1,7 @@
 package fr.silenthill99.test_mod;
 
 import com.mojang.logging.LogUtils;
+import fr.silenthill99.test_mod.components.ModDataComponents;
 import fr.silenthill99.test_mod.init.ModBlocks;
 import fr.silenthill99.test_mod.init.ModItems;
 import fr.silenthill99.test_mod.utils.ModCreativeModTabs;
@@ -34,6 +35,7 @@ public class Main {
         ModItems.ITEMS.register(modEventBus);
         ModBlocks.BLOCKS.register(modEventBus);
         ModCreativeModTabs.CREATIVE_MODE_TABS.register(modEventBus);
+        ModDataComponents.DATA_COMPONENT_TYPES.register(modEventBus);
     }
 
     private void commonSetup(final FMLCommonSetupEvent event) {

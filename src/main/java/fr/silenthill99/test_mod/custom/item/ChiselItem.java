@@ -1,5 +1,6 @@
 package fr.silenthill99.test_mod.custom.item;
 
+import fr.silenthill99.test_mod.components.ModDataComponents;
 import fr.silenthill99.test_mod.init.ModBlocks;
 import net.minecraft.client.gui.screens.Screen;
 import net.minecraft.core.BlockPos;
@@ -51,6 +52,8 @@ public class ChiselItem extends Item {
                         item -> context.getPlayer().onEquippedItemBroken(item, EquipmentSlot.MAINHAND));
 
                 level.playSound(null, pos, SoundEvents.GRINDSTONE_USE, SoundSource.BLOCKS);
+
+                context.getItemInHand().set(ModDataComponents.COORDINATES, context.getClickedPos());
             }
         }
 
@@ -64,6 +67,10 @@ public class ChiselItem extends Item {
             tooltipComponents.add(Component.translatable("tooltip.test_mod.chisel"));
         } else {
             tooltipComponents.add(Component.translatable("tooltip.test_mod.chisel.shift_down"));
+        }
+
+        if (stack.get(ModDataComponents.COORDINATES) != null) {
+            tooltipComponents.add(Component.literal("Last block changed at " + stack.get(ModDataComponents.COORDINATES)));
         }
     }
 }
