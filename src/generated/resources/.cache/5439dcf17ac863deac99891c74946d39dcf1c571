@@ -1,7 +1,9 @@
-// 1.21	2024-09-13T21:46:42.2747346	Tags for minecraft:block mod id test_mod
+// 1.21	2024-09-25T00:53:59.8091011	Tags for minecraft:block mod id test_mod
 7b0c9c80548a11b59426af9334a2af51db5fcd92 data/minecraft/tags/block/fences.json
 9551115c8fa4fff7caa6b2fa20abb1d30918bad6 data/minecraft/tags/block/fence_gates.json
-2c6d3f774afeeb8803636947604aa38e71ca1daf data/minecraft/tags/block/mineable/pickaxe.json
-ff8ffa5da730f39f934250c10ff993db772e706b data/minecraft/tags/block/needs_diamond_tool.json
-9c5f3f668427cbcc4c22c81abeaa29b169c54197 data/minecraft/tags/block/needs_iron_tool.json
+65d9a0d9af5c648b9b0e3b57cb92dc4e3efcc9ea data/minecraft/tags/block/mineable/pickaxe.json
+5998c032deabb27680ab0c097200bbc1a0ad6db4 data/minecraft/tags/block/needs_diamond_tool.json
+ff8ffa5da730f39f934250c10ff993db772e706b data/minecraft/tags/block/needs_iron_tool.json
 e845a9da751559a1ff79774f90e93c551aea3beb data/minecraft/tags/block/walls.json
+1a611590b47686d981c02369561529bfb792c3cb data/test_mod/tags/block/incorrect_for_bismuth_tool.json
+7276037aaac043eba09c4a3157727cecfe60f5f8 data/test_mod/tags/block/needs_bismuth_tool.json

@@ -10,6 +10,8 @@ import net.minecraft.world.level.block.Block;
 
 public class ModTags {
     public static class ModBlockTags {
+        public static final TagKey<Block> NEEDS_BISMUTH_TOOL = createtag("needs_bismuth_tool");
+        public static final TagKey<Block> INCORRECT_FOR_BISMUTH_TOOL = createtag("incorrect_for_bismuth_tool");
 
         private static TagKey<Block> createtag(String name) {
             return BlockTags.create(ResourceLocation.fromNamespaceAndPath(Main.MODID, name));
