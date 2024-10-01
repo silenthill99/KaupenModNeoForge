@@ -3,6 +3,7 @@ package fr.silenthill99.test_mod.init;
 import fr.silenthill99.test_mod.Main;
 import fr.silenthill99.test_mod.custom.item.ChiselItem;
 import fr.silenthill99.test_mod.custom.item.FuelItem;
+import fr.silenthill99.test_mod.custom.item.HammerItem;
 import fr.silenthill99.test_mod.utils.ModFoodProperties;
 import fr.silenthill99.test_mod.utils.ModToolTiers;
 import net.minecraft.network.chat.Component;
@@ -55,5 +56,7 @@ public class ModItems {
     public static final DeferredItem<HoeItem> BISMUTH_HOE = ITEMS.register("bismuth_hoe",
             () -> new HoeItem(ModToolTiers.BISMUTH_TIER, new Item.Properties()
                     .attributes(HoeItem.createAttributes(ModToolTiers.BISMUTH_TIER, 0, -3))));
-
+    public static final DeferredItem<HammerItem> BISMUTH_HAMMER = ITEMS.register("bismuth_hammer",
+            () -> new HammerItem(ModToolTiers.BISMUTH_TIER, new Item.Properties()
+                    .attributes(PickaxeItem.createAttributes(ModToolTiers.BISMUTH_TIER, 7, -3.5f))));
 }

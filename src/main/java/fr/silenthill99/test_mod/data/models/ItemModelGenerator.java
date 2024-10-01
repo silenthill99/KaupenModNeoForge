@@ -29,6 +29,7 @@ public class ItemModelGenerator extends ItemModelProvider {
         toolItem(ModItems.BISMUTH_SHOVEL);
         toolItem(ModItems.BISMUTH_AXE);
         toolItem(ModItems.BISMUTH_HOE);
+        toolItem(ModItems.BISMUTH_HAMMER);
     }
 
     private <T extends Item> void toolItem(DeferredItem<T> item) {

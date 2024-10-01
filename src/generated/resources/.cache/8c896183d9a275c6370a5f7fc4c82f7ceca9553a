@@ -1,7 +1,8 @@
-// 1.21	2024-09-25T00:39:46.7378327	Item Models: test_mod
+// 1.21	2024-10-02T00:04:58.0364384	Item Models: test_mod
 f8a798d7b3ca106781e6a133458b50e5a10053f1 assets/test_mod/models/item/bismuth.json
 468b248073742aab3427936bd4d8b0039022fd4f assets/test_mod/models/item/bismuth_axe.json
 8c4d2a4ba2e4d66f275e62b0dbb8868b5aa23d0d assets/test_mod/models/item/bismuth_door.json
+f17c68cedeb33dffbd5ab9413bc6702c01bcbb7c assets/test_mod/models/item/bismuth_hammer.json
 ab3cb4e10313d98166e87322c3062b9585eb2b75 assets/test_mod/models/item/bismuth_hoe.json
 0461b253e69e848fed1c535f976e042ee8fc44d7 assets/test_mod/models/item/bismuth_pickaxe.json
 65805c14da88bf20692624cdb51d7970ba5a712e assets/test_mod/models/item/bismuth_shovel.json

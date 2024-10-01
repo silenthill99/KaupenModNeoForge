@@ -8,6 +8,7 @@ import net.minecraft.core.HolderLookup;
 import net.minecraft.data.PackOutput;
 import net.minecraft.data.recipes.*;
 import net.minecraft.resources.ResourceLocation;
+import net.minecraft.world.item.Items;
 import net.minecraft.world.item.crafting.*;
 import net.minecraft.world.level.ItemLike;
 import net.neoforged.neoforge.common.conditions.IConditionBuilder;
@@ -46,7 +47,14 @@ public class RecipeGenerator extends RecipeProvider implements IConditionBuilder
                 200, "bismuth");
         oreBlasting(recipeOutput, BISMUTH_SMELTABLES, RecipeCategory.MISC, ModItems.BISMUTH.get(), 0.25f,
                 100, "bismuth");
-
+        ShapedRecipeBuilder.shaped(RecipeCategory.TOOLS, ModItems.BISMUTH_HAMMER)
+                .pattern("000")
+                .pattern("000")
+                .pattern(" 1 ")
+                .define('0', ModItems.BISMUTH)
+                .define('1', Items.STICK)
+                .unlockedBy(getItemName(ModItems.BISMUTH_HAMMER), InventoryChangeTrigger.TriggerInstance.hasItems(ModItems.BISMUTH, Items.STICK))
+                .save(recipeOutput);
     }
 
     protected static void oreSmelting(
