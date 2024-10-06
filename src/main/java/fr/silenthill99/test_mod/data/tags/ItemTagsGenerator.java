@@ -42,5 +42,11 @@ public class ItemTagsGenerator extends ItemTagsProvider {
         tag(ItemTags.HOES).add(
                 ModItems.BISMUTH_HOE.get()
         );
+        tag(ItemTags.TRIMMABLE_ARMOR).add(
+                ModItems.BISMUTH_HELMET.get(),
+                ModItems.BISMUTH_CHESTPLATE.get(),
+                ModItems.BISMUTH_LEGGINGS.get(),
+                ModItems.BISMUTH_BOOTS.get()
+        );
     }
 }
