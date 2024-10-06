@@ -4,6 +4,7 @@ import fr.silenthill99.test_mod.Main;
 import fr.silenthill99.test_mod.custom.item.ChiselItem;
 import fr.silenthill99.test_mod.custom.item.FuelItem;
 import fr.silenthill99.test_mod.custom.item.HammerItem;
+import fr.silenthill99.test_mod.utils.ModArmorMaterial;
 import fr.silenthill99.test_mod.utils.ModFoodProperties;
 import fr.silenthill99.test_mod.utils.ModToolTiers;
 import net.minecraft.network.chat.Component;
@@ -59,4 +60,17 @@ public class ModItems {
     public static final DeferredItem<HammerItem> BISMUTH_HAMMER = ITEMS.register("bismuth_hammer",
             () -> new HammerItem(ModToolTiers.BISMUTH_TIER, new Item.Properties()
                     .attributes(PickaxeItem.createAttributes(ModToolTiers.BISMUTH_TIER, 7, -3.5f))));
+
+    public static final DeferredItem<ArmorItem> BISMUTH_HELMET = ITEMS.register("bismuth_helmet",
+            () -> new ArmorItem(ModArmorMaterial.BISMUTH_ARMOR_MATERIAL, ArmorItem.Type.HELMET,
+                    new Item.Properties().durability(ArmorItem.Type.HELMET.getDurability(19))));
+    public static final DeferredItem<ArmorItem> BISMUTH_CHESTPLATE = ITEMS.register("bismuth_chestplate",
+            () -> new ArmorItem(ModArmorMaterial.BISMUTH_ARMOR_MATERIAL, ArmorItem.Type.CHESTPLATE,
+                    new Item.Properties().durability(ArmorItem.Type.CHESTPLATE.getDurability(19))));
+    public static final DeferredItem<ArmorItem> BISMUTH_LEGGINGS = ITEMS.register("bismuth_leggings",
+            () -> new ArmorItem(ModArmorMaterial.BISMUTH_ARMOR_MATERIAL, ArmorItem.Type.LEGGINGS,
+                    new Item.Properties().durability(ArmorItem.Type.LEGGINGS.getDurability(19))));
+    public static final DeferredItem<ArmorItem> BISMUTH_BOOTS = ITEMS.register("bismuth_boots",
+            () -> new ArmorItem(ModArmorMaterial.BISMUTH_ARMOR_MATERIAL, ArmorItem.Type.BOOTS,
+                    new Item.Properties().durability(ArmorItem.Type.BOOTS.getDurability(19))));
 }
