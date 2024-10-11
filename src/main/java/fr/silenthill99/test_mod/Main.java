@@ -1,10 +1,10 @@
 package fr.silenthill99.test_mod;
 
 import com.mojang.logging.LogUtils;
+import fr.silenthill99.test_mod.components.ModDataComponents;
 import fr.silenthill99.test_mod.init.ModBlocks;
 import fr.silenthill99.test_mod.init.ModItems;
 import fr.silenthill99.test_mod.utils.ModCreativeModTabs;
-import fr.silenthill99.test_mod.utils.ModSoundEvents;
 import net.minecraft.world.item.CreativeModeTabs;
 import net.neoforged.api.distmarker.Dist;
 import net.neoforged.bus.api.IEventBus;
@@ -35,7 +35,7 @@ public class Main {
         ModItems.ITEMS.register(modEventBus);
         ModBlocks.BLOCKS.register(modEventBus);
         ModCreativeModTabs.CREATIVE_MODE_TABS.register(modEventBus);
-        ModSoundEvents.SOUNDS.register(modEventBus);
+        ModDataComponents.DATA_COMPONENT_TYPES.register(modEventBus);
     }
 
     private void commonSetup(final FMLCommonSetupEvent event) {
@@ -52,10 +52,6 @@ public class Main {
         if (event.getTabKey() == CreativeModeTabs.BUILDING_BLOCKS) {
             event.accept(ModBlocks.BISMUTH_BLOCK);
             event.accept(ModBlocks.BISMUTH_ORE);
-        }
-
-        if (event.getTabKey() == CreativeModeTabs.TOOLS_AND_UTILITIES) {
-            event.accept(ModItems.SACRIFICED_FLOWERS);
         }
     }
 

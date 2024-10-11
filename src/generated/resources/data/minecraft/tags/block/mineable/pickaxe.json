@@ -2,7 +2,7 @@
   "values": [
     "test_mod:bismuth_block",
     "test_mod:bismuth_ore",
-    "test_mod:bismuth_deepslate_ore",
-    "test_mod:magic_block"
+    "test_mod:bismuth_lamp",
+    "test_mod:bismuth_deepslate_ore"
   ]
 }
