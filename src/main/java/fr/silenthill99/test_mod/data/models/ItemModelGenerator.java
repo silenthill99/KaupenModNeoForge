@@ -56,11 +56,17 @@ public class ItemModelGenerator extends ItemModelProvider {
         trimmedArmorItem(ModItems.BISMUTH_CHESTPLATE);
         trimmedArmorItem(ModItems.BISMUTH_LEGGINGS);
         trimmedArmorItem(ModItems.BISMUTH_BOOTS);
+        cdItem(ModItems.SACRIFICED_FLOWERS);
     }
 
     private <T extends Item> void toolItem(DeferredItem<T> item) {
         withExistingParent(item.getId().getPath(), "item/handheld")
                 .texture("layer0", ResourceLocation.fromNamespaceAndPath(Main.MODID, "item/" + item.getId().getPath()));
+    }
+
+    private void cdItem(DeferredItem<Item> item) {
+        withExistingParent(item.getId().getPath(), "item/generated")
+                .texture("layer0", mcLoc("item/music_disc_mellohi"));
     }
 
     private void trimmedArmorItem(DeferredItem<ArmorItem> itemDeferredItem) {

@@ -6,6 +6,7 @@ import fr.silenthill99.test_mod.data.loot_tables.LootTableGenerator;
 import fr.silenthill99.test_mod.data.models.BlockStateGenerator;
 import fr.silenthill99.test_mod.data.models.ItemModelGenerator;
 import fr.silenthill99.test_mod.data.recipes.RecipeGenerator;
+import fr.silenthill99.test_mod.data.sounds.SoundDefinitionsGenerator;
 import fr.silenthill99.test_mod.data.tags.BlockTagGenerator;
 import fr.silenthill99.test_mod.data.tags.ItemTagsGenerator;
 import net.minecraft.core.HolderLookup;
@@ -33,7 +34,8 @@ public class DataGeneration {
 
         generator.addProvider(client, new ItemModelGenerator(packOutput, existingFileHelper));
         generator.addProvider(client, new BlockStateGenerator(packOutput, existingFileHelper));
-        generator.addProvider(client, new SoundGenerator(packOutput, existingFileHelper));
+        generator.addProvider(client, new SoundDefinitionsGenerator(packOutput, existingFileHelper));
+
         generator.addProvider(serveur, new RecipeGenerator(packOutput, lookupProvider));
         generator.addProvider(serveur, new LootTableGenerator(packOutput, lookupProvider));
         BlockTagGenerator blockTagGenerator = generator.addProvider(serveur, new BlockTagGenerator(packOutput, lookupProvider, existingFileHelper));

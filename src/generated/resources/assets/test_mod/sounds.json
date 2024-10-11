@@ -1,10 +1,7 @@
 {
   "sacrificed_flowers": {
     "sounds": [
-      {
-        "name": "test_mod:sacrificed_flowers",
-        "stream": true
-      }
+      "test_mod:sacrificed_flowers"
     ]
   }
 }

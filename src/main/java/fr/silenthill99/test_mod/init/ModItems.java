@@ -7,6 +7,7 @@ import fr.silenthill99.test_mod.custom.item.HammerItem;
 import fr.silenthill99.test_mod.custom.item.ModArmorItem;
 import fr.silenthill99.test_mod.utils.ModArmorMaterial;
 import fr.silenthill99.test_mod.utils.ModFoodProperties;
+import fr.silenthill99.test_mod.utils.ModSoundEvents;
 import fr.silenthill99.test_mod.utils.ModToolTiers;
 import net.minecraft.network.chat.Component;
 import net.minecraft.world.item.*;
@@ -36,6 +37,10 @@ public class ModItems {
                     tooltipComponents.add(Component.translatable("tooltip.test_mod.radish.tooltip"));
                 }
             });
+
+    public static final DeferredItem<Item> SACRIFICED_FLOWERS = ITEMS.register("sacrificed_flowers",
+            () -> new Item(new Item.Properties().jukeboxPlayable(ModSoundEvents.convertToJukeboxSong(ModSoundEvents.SACRIFICED_FLOWERS))
+                    .stacksTo(1)));
 
     public static final DeferredItem<Item> FROSTFIRE_ICE = ITEMS.register("frostfire_ice",
             () -> new FuelItem(new Item.Properties(), 800));
