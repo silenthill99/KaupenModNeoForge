@@ -1,4 +1,4 @@
-// 1.21	2024-10-11T11:01:48.8116062	Item Models: test_mod
+// 1.21	2024-10-11T12:21:39.4171917	Item Models: test_mod
 f8a798d7b3ca106781e6a133458b50e5a10053f1 assets/test_mod/models/item/bismuth.json
 468b248073742aab3427936bd4d8b0039022fd4f assets/test_mod/models/item/bismuth_axe.json
 6b34a2e7fee8a855654e42329270615d5f42357f assets/test_mod/models/item/bismuth_boots.json
@@ -37,6 +37,7 @@ aae553750e611a85a3ef4a9c7c3854af36ab74b9 assets/test_mod/models/item/bismuth_hel
 4157ccf260a6a6f2db53c4384a82c3b1298177f7 assets/test_mod/models/item/bismuth_helmet_quartz_trim.json
 a867306ffb1d404346f3433bec46ad23fe977abe assets/test_mod/models/item/bismuth_helmet_redstone_trim.json
 ab3cb4e10313d98166e87322c3062b9585eb2b75 assets/test_mod/models/item/bismuth_hoe.json
+580a4fe1a02fe7249e2aae1aab4949c28fa4c1cc assets/test_mod/models/item/bismuth_horse_armor.json
 2e0fc46e25d69223dd1c1be38e94be954663b997 assets/test_mod/models/item/bismuth_leggings.json
 2d8994d92ff256ca81c339590e7ade430c94cb09 assets/test_mod/models/item/bismuth_leggings_amethyst_trim.json
 dbffee09bc0a819066c3fa7322b3a793732068bd assets/test_mod/models/item/bismuth_leggings_copper_trim.json

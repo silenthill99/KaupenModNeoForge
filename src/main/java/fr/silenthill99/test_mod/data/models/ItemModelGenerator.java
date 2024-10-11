@@ -57,6 +57,7 @@ public class ItemModelGenerator extends ItemModelProvider {
         trimmedArmorItem(ModItems.BISMUTH_LEGGINGS);
         trimmedArmorItem(ModItems.BISMUTH_BOOTS);
         cdItem(ModItems.SACRIFICED_FLOWERS);
+        basicItem(ModItems.BISMUTH_HORSE_ARMOR.get());
     }
 
     private <T extends Item> void toolItem(DeferredItem<T> item) {
