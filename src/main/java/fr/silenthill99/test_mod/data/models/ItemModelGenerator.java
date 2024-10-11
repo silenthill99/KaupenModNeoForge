@@ -3,8 +3,10 @@ package fr.silenthill99.test_mod.data.models;
 import fr.silenthill99.test_mod.Main;
 import fr.silenthill99.test_mod.init.ModBlocks;
 import fr.silenthill99.test_mod.init.ModItems;
+import net.minecraft.core.registries.BuiltInRegistries;
 import net.minecraft.data.PackOutput;
 import net.minecraft.world.item.Item;
+import net.minecraft.world.item.Items;
 import net.neoforged.neoforge.client.model.generators.ItemModelProvider;
 import net.neoforged.neoforge.common.data.ExistingFileHelper;
 import net.neoforged.neoforge.registries.DeferredItem;
@@ -23,6 +25,8 @@ public class ItemModelGenerator extends ItemModelProvider {
         simpleItem(ModItems.FROSTFIRE_ICE);
         simpleItem(ModItems.STARLIGHT_ASHES);
         basicItem(ModBlocks.BISMUTH_DOOR.asItem());
+        withExistingParent(ModItems.SACRIFICED_FLOWERS.getId().getPath(), "item/generated")
+                .texture("layer0", mcLoc("item/" + BuiltInRegistries.ITEM.getKey(Items.MUSIC_DISC_MELLOHI).getPath()));
     }
 
     private void simpleItem(DeferredItem<Item> item) {

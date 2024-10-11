@@ -4,10 +4,9 @@ import fr.silenthill99.test_mod.Main;
 import fr.silenthill99.test_mod.custom.item.ChiselItem;
 import fr.silenthill99.test_mod.custom.item.FuelItem;
 import fr.silenthill99.test_mod.utils.ModFoodProperties;
+import fr.silenthill99.test_mod.utils.ModSoundEvents;
 import net.minecraft.network.chat.Component;
-import net.minecraft.world.item.Item;
-import net.minecraft.world.item.ItemStack;
-import net.minecraft.world.item.TooltipFlag;
+import net.minecraft.world.item.*;
 import net.neoforged.neoforge.registries.DeferredItem;
 import net.neoforged.neoforge.registries.DeferredRegister;
 import org.jetbrains.annotations.NotNull;
@@ -40,5 +39,8 @@ public class ModItems {
 
     public static final DeferredItem<Item> STARLIGHT_ASHES = ITEMS.register("starlight_ashes",
             () -> new Item(new Item.Properties()));
+    public static final DeferredItem<Item> SACRIFICED_FLOWERS = ITEMS.register("sacrificed_flowers",
+            () -> new Item(new Item.Properties().jukeboxPlayable(ModSoundEvents.SACRIFICED_FLOWERS)
+                    .stacksTo(1)));
 
 }

@@ -33,6 +33,7 @@ public class DataGeneration {
 
         generator.addProvider(client, new ItemModelGenerator(packOutput, existingFileHelper));
         generator.addProvider(client, new BlockStateGenerator(packOutput, existingFileHelper));
+        generator.addProvider(client, new SoundGenerator(packOutput, existingFileHelper));
         generator.addProvider(serveur, new RecipeGenerator(packOutput, lookupProvider));
         generator.addProvider(serveur, new LootTableGenerator(packOutput, lookupProvider));
         BlockTagGenerator blockTagGenerator = generator.addProvider(serveur, new BlockTagGenerator(packOutput, lookupProvider, existingFileHelper));
