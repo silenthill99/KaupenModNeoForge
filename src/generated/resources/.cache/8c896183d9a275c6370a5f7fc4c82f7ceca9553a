@@ -1,4 +1,4 @@
-// 1.21	2024-10-11T12:21:39.4171917	Item Models: test_mod
+// 1.21	2024-10-26T19:49:30.2790307	Item Models: test_mod
 f8a798d7b3ca106781e6a133458b50e5a10053f1 assets/test_mod/models/item/bismuth.json
 468b248073742aab3427936bd4d8b0039022fd4f assets/test_mod/models/item/bismuth_axe.json
 6b34a2e7fee8a855654e42329270615d5f42357f assets/test_mod/models/item/bismuth_boots.json
@@ -57,4 +57,5 @@ e5bf8155b0f81368de259174de3dc055dd83c830 assets/test_mod/models/item/frostfire_i
 bd657a685695b07200cd311d7969c13bd43a5c20 assets/test_mod/models/item/radish.json
 ad780a10f5d238d15a3e420a6a8c169674a77109 assets/test_mod/models/item/raw_bismuth.json
 6782b24147ee8c451f5fe37d0081f613d271d007 assets/test_mod/models/item/sacrificed_flowers.json
+4d39500427f671b8178930c6d6170f1458307a24 assets/test_mod/models/item/silent_armor_trim_smithing_template.json
 00263046a3e3dcd71ff1f3dca3155ef161760cf8 assets/test_mod/models/item/starlight_ashes.json

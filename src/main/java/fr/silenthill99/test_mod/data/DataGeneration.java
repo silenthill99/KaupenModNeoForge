@@ -41,5 +41,6 @@ public class DataGeneration {
         BlockTagGenerator blockTagGenerator = generator.addProvider(serveur, new BlockTagGenerator(packOutput, lookupProvider, existingFileHelper));
         generator.addProvider(serveur, new ItemTagsGenerator(packOutput, lookupProvider, blockTagGenerator.contentsGetter()));
         generator.addProvider(serveur, new DataMapGenerator(packOutput, lookupProvider));
+        generator.addProvider(serveur, new DatapackGenerator(packOutput, lookupProvider));
     }
 }

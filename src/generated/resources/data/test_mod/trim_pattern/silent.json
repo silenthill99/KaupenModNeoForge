@@ -1,0 +1,8 @@
+{
+  "asset_id": "test_mod:silent",
+  "decal": false,
+  "description": {
+    "translate": "trim_pattern.test_mod.silent"
+  },
+  "template_item": "test_mod:silent_armor_trim_smithing_template"
+}

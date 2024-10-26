@@ -55,6 +55,7 @@ public class RecipeGenerator extends RecipeProvider implements IConditionBuilder
                 .define('1', Items.STICK)
                 .unlockedBy(getItemName(ModItems.BISMUTH_HAMMER), InventoryChangeTrigger.TriggerInstance.hasItems(ModItems.BISMUTH, Items.STICK))
                 .save(recipeOutput);
+        trimSmithing(recipeOutput, ModItems.SILENT_SMITHING_TEMPLATE.get(), ResourceLocation.fromNamespaceAndPath(Main.MODID, "silent"));
     }
 
     protected static void oreSmelting(

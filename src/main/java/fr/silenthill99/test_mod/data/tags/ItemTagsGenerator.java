@@ -48,5 +48,11 @@ public class ItemTagsGenerator extends ItemTagsProvider {
                 ModItems.BISMUTH_LEGGINGS.get(),
                 ModItems.BISMUTH_BOOTS.get()
         );
+        tag(ItemTags.TRIM_MATERIALS).add(
+                ModItems.BISMUTH.get()
+        );
+        tag(ItemTags.TRIM_TEMPLATES).add(
+                ModItems.SILENT_SMITHING_TEMPLATE.get()
+        );
     }
 }

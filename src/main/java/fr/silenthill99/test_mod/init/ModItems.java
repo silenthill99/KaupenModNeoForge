@@ -10,6 +10,7 @@ import fr.silenthill99.test_mod.utils.ModFoodProperties;
 import fr.silenthill99.test_mod.utils.ModSoundEvents;
 import fr.silenthill99.test_mod.utils.ModToolTiers;
 import net.minecraft.network.chat.Component;
+import net.minecraft.resources.ResourceLocation;
 import net.minecraft.world.item.*;
 import net.neoforged.neoforge.registries.DeferredItem;
 import net.neoforged.neoforge.registries.DeferredRegister;
@@ -83,4 +84,7 @@ public class ModItems {
     public static final DeferredItem<Item> BISMUTH_HORSE_ARMOR = ITEMS.register("bismuth_horse_armor",
             () -> new AnimalArmorItem(ModArmorMaterial.BISMUTH_ARMOR_MATERIAL, AnimalArmorItem.BodyType.EQUESTRIAN,
                     false, new Item.Properties().stacksTo(1)));
+
+    public static final DeferredItem<Item> SILENT_SMITHING_TEMPLATE = ITEMS.register("silent_armor_trim_smithing_template",
+            () -> SmithingTemplateItem.createArmorTrimTemplate(ResourceLocation.fromNamespaceAndPath(Main.MODID, "silent")));
 }
