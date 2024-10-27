@@ -3,6 +3,7 @@ package fr.silenthill99.test_mod.init;
 import fr.silenthill99.test_mod.Main;
 import fr.silenthill99.test_mod.custom.block.BismuthLampBlock;
 import fr.silenthill99.test_mod.custom.block.MagicBlock;
+import fr.silenthill99.test_mod.utils.ModSoundEvents;
 import net.minecraft.util.valueproviders.UniformInt;
 import net.minecraft.world.item.BlockItem;
 import net.minecraft.world.item.Item;
@@ -32,7 +33,7 @@ public class ModBlocks {
                     BlockBehaviour.Properties.of().strength(3).requiresCorrectToolForDrops().sound(SoundType.DEEPSLATE)));
 
     public static final DeferredBlock<Block> MAGIC_BLOCK = registerBlock("magic_block",
-            () -> new MagicBlock(BlockBehaviour.Properties.of().strength(2).requiresCorrectToolForDrops()));
+            () -> new MagicBlock(BlockBehaviour.Properties.of().strength(2).requiresCorrectToolForDrops().sound(ModSoundEvents.MAGIC_BLOCK_SOUNDS)));
 
     public static final DeferredBlock<StairBlock> BISMUTH_STAIRS = registerBlock("bismuth_stairs",
             () -> new StairBlock(BISMUTH_BLOCK.get().defaultBlockState(),

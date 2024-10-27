@@ -1,4 +1,40 @@
 {
+  "chisel_use": {
+    "sounds": [
+      "test_mod:chisel_use"
+    ],
+    "subtitle": "sounds.test_mod.chisel_use"
+  },
+  "magic_block_break": {
+    "sounds": [
+      "test_mod:magic_block_break"
+    ],
+    "subtitle": "sounds.test_mod.magic_block_break"
+  },
+  "magic_block_fall": {
+    "sounds": [
+      "test_mod:magic_block_fall"
+    ],
+    "subtitle": "sounds.test_mod.magic_block_fall"
+  },
+  "magic_block_hit": {
+    "sounds": [
+      "test_mod:magic_block_hit"
+    ],
+    "subtitle": "sounds.test_mod.magic_block_hit"
+  },
+  "magic_block_place": {
+    "sounds": [
+      "test_mod:magic_block_place"
+    ],
+    "subtitle": "sounds.test_mod.magic_block_place"
+  },
+  "magic_block_step": {
+    "sounds": [
+      "test_mod:magic_block_step"
+    ],
+    "subtitle": "sounds.test_mod.magic_block_step"
+  },
   "sacrificed_flowers": {
     "sounds": [
       "test_mod:sacrificed_flowers"

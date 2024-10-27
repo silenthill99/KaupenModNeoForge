@@ -2,11 +2,11 @@ package fr.silenthill99.test_mod.custom.item;
 
 import fr.silenthill99.test_mod.components.ModDataComponents;
 import fr.silenthill99.test_mod.init.ModBlocks;
+import fr.silenthill99.test_mod.utils.ModSoundEvents;
 import net.minecraft.client.gui.screens.Screen;
 import net.minecraft.core.BlockPos;
 import net.minecraft.network.chat.Component;
 import net.minecraft.server.level.ServerLevel;
-import net.minecraft.sounds.SoundEvents;
 import net.minecraft.sounds.SoundSource;
 import net.minecraft.world.InteractionResult;
 import net.minecraft.world.entity.EquipmentSlot;
@@ -51,7 +51,7 @@ public class ChiselItem extends Item {
                 context.getItemInHand().hurtAndBreak(1, (ServerLevel) level, context.getPlayer(),
                         item -> context.getPlayer().onEquippedItemBroken(item, EquipmentSlot.MAINHAND));
 
-                level.playSound(null, pos, SoundEvents.GRINDSTONE_USE, SoundSource.BLOCKS);
+                level.playSound(null, pos, ModSoundEvents.CHISEL_USE.get(), SoundSource.BLOCKS);
 
                 context.getItemInHand().set(ModDataComponents.COORDINATES, context.getClickedPos());
             }
