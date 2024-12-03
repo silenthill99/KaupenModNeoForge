@@ -37,5 +37,7 @@ public class SoundDefinitionsGenerator extends SoundDefinitionsProvider {
         add(ModSoundEvents.MAGIC_BLOCK_FALL, SoundDefinition.definition()
                 .subtitle("sounds.test_mod.magic_block_fall")
                 .with(sound(ResourceLocation.fromNamespaceAndPath(Main.MODID, "magic_block_fall"))));
+        add(ModSoundEvents.BAR_BRAWL, SoundDefinition.definition()
+                .with(sound(ResourceLocation.fromNamespaceAndPath(Main.MODID, "bar_brawl"))));
     }
 }

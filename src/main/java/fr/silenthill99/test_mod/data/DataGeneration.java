@@ -5,6 +5,7 @@ import fr.silenthill99.test_mod.data.data_maps.DataMapGenerator;
 import fr.silenthill99.test_mod.data.loot_tables.LootTableGenerator;
 import fr.silenthill99.test_mod.data.models.BlockStateGenerator;
 import fr.silenthill99.test_mod.data.models.ItemModelGenerator;
+import fr.silenthill99.test_mod.data.packs.DatapackGenerator;
 import fr.silenthill99.test_mod.data.recipes.RecipeGenerator;
 import fr.silenthill99.test_mod.data.sounds.SoundDefinitionsGenerator;
 import fr.silenthill99.test_mod.data.tags.BlockTagGenerator;

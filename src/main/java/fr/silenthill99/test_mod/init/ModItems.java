@@ -87,4 +87,7 @@ public class ModItems {
 
     public static final DeferredItem<Item> SILENT_SMITHING_TEMPLATE = ITEMS.register("silent_armor_trim_smithing_template",
             () -> SmithingTemplateItem.createArmorTrimTemplate(ResourceLocation.fromNamespaceAndPath(Main.MODID, "silent")));
+
+    public static final DeferredItem<Item> BAR_BRAWL_MUSIC_DISC = ITEMS.register("bar_brawl_music_disc",
+            () -> new Item(new Item.Properties().jukeboxPlayable(ModSoundEvents.convertToJukeboxSong(ModSoundEvents.BAR_BRAWL)).stacksTo(1)));
 }

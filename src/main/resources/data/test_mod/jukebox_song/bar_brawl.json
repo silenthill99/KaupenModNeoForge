@@ -1,0 +1,8 @@
+{
+  "comparator_output": 15,
+  "description": {
+    "translate": "item.test_mod.bar_brawl_music_disc.desc"
+  },
+  "length_in_seconds": 162,
+  "sound_event": "test_mod:bar_brawl"
+}

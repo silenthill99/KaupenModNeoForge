@@ -59,6 +59,7 @@ public class ItemModelGenerator extends ItemModelProvider {
         cdItem(ModItems.SACRIFICED_FLOWERS);
         basicItem(ModItems.BISMUTH_HORSE_ARMOR.get());
         basicItem(ModItems.SILENT_SMITHING_TEMPLATE.get());
+        basicItem(ModItems.BAR_BRAWL_MUSIC_DISC.get());
     }
 
     private <T extends Item> void toolItem(DeferredItem<T> item) {

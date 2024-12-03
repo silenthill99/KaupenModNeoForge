@@ -1,4 +1,9 @@
 {
+  "bar_brawl": {
+    "sounds": [
+      "test_mod:bar_brawl"
+    ]
+  },
   "chisel_use": {
     "sounds": [
       "test_mod:chisel_use"
