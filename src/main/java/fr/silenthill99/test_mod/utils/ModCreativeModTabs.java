@@ -64,6 +64,8 @@ public class ModCreativeModTabs {
                         output.accept(ModBlocks.BISMUTH_DOOR);
                         output.accept(ModBlocks.BISMUTH_TRAPDOOR);
                         output.accept(ModBlocks.BISMUTH_LAMP);
+                        output.accept(ModBlocks.BISMUTH_END_ORE);
+                        output.accept(ModBlocks.BISMUTH_NETHER_ORE);
                     })
                     .withTabsBefore(ResourceLocation.fromNamespaceAndPath(Main.MODID, "bismuth_items_tab"))
                     .build());

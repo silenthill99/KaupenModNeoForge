@@ -3,6 +3,8 @@
     "test_mod:bismuth_block",
     "test_mod:bismuth_ore",
     "test_mod:bismuth_lamp",
-    "test_mod:bismuth_deepslate_ore"
+    "test_mod:bismuth_deepslate_ore",
+    "test_mod:bismuth_end_ore",
+    "test_mod:bismuth_nether_ore"
   ]
 }

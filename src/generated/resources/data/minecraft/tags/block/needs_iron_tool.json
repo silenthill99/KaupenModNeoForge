@@ -1,5 +1,7 @@
 {
   "values": [
-    "test_mod:bismuth_deepslate_ore"
+    "test_mod:bismuth_deepslate_ore",
+    "test_mod:bismuth_end_ore",
+    "test_mod:bismuth_nether_ore"
   ]
 }

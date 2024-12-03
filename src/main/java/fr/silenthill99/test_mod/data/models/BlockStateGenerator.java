@@ -39,6 +39,8 @@ public class BlockStateGenerator extends BlockStateProvider {
         trapdoorBlockWithRenderType(ModBlocks.BISMUTH_TRAPDOOR.get(), modLoc("block/bismuth_trapdoor"),
                 true, "cutout");
         customLamp();
+        simpleBlockWithItem(ModBlocks.BISMUTH_END_ORE.get(), cubeAll(ModBlocks.BISMUTH_END_ORE.get()));
+        simpleBlockWithItem(ModBlocks.BISMUTH_NETHER_ORE.get(), cubeAll(ModBlocks.BISMUTH_NETHER_ORE.get()));
     }
 
     @Override

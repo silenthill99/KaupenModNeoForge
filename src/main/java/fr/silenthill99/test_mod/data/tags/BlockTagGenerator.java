@@ -24,10 +24,14 @@ public class BlockTagGenerator extends BlockTagsProvider {
                 ModBlocks.BISMUTH_BLOCK.get(),
                 ModBlocks.BISMUTH_ORE.get(),
                 ModBlocks.BISMUTH_LAMP.get(),
-                ModBlocks.BISMUTH_DEEPSLATE_ORE.get()
+                ModBlocks.BISMUTH_DEEPSLATE_ORE.get(),
+                ModBlocks.BISMUTH_END_ORE.get(),
+                ModBlocks.BISMUTH_NETHER_ORE.get()
         );
         tag(BlockTags.NEEDS_IRON_TOOL).add(
-                ModBlocks.BISMUTH_DEEPSLATE_ORE.get()
+                ModBlocks.BISMUTH_DEEPSLATE_ORE.get(),
+                ModBlocks.BISMUTH_END_ORE.get(),
+                ModBlocks.BISMUTH_NETHER_ORE.get()
         );
         tag(BlockTags.NEEDS_DIAMOND_TOOL).add(
                 ModBlocks.BISMUTH_LAMP.get()

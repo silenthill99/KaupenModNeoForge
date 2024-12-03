@@ -43,6 +43,8 @@ public class BlockLootTables extends BlockLootSubProvider {
         add(ModBlocks.BISMUTH_DOOR.get(), this::createDoorTable);
         dropSelf(ModBlocks.BISMUTH_TRAPDOOR.get());
         dropSelf(ModBlocks.BISMUTH_LAMP.get());
+        add(ModBlocks.BISMUTH_END_ORE.get(), block -> createDropLikeCopperOre(block, ModItems.RAW_BISMUTH.get(), 3, 6));
+        add(ModBlocks.BISMUTH_NETHER_ORE.get(), block -> createDropLikeCopperOre(block, ModItems.RAW_BISMUTH.get(), 4, 8));
     }
 
     @Override
