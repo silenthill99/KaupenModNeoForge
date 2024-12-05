@@ -49,7 +49,7 @@ public class BlockLootTables extends BlockLootSubProvider {
         dropSelf(ModBlocks.BLOODWOOD_LOG.get());
         dropSelf(ModBlocks.STRIPPED_BLOODWOOD_LOG.get());
         dropSelf(ModBlocks.BLOODWOOD_WOOD.get());
-        dropSelf(ModBlocks.STRIPPED_BLOODWOOD_LOG.get());
+        dropSelf(ModBlocks.STRIPPED_BLOODWOOD_WOOD.get());
         dropSelf(ModBlocks.BLOODWOOD_PLANKS.get());
         dropSelf(ModBlocks.BLOODWOOD_SAPLING.get());
 

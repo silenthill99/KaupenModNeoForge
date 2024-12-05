@@ -1,10 +1,13 @@
-// 1.21	2024-10-26T19:49:30.2750421	Tags for minecraft:item mod id vanilla
+// 1.21	2024-12-05T22:04:55.267169	Tags for minecraft:item mod id vanilla
 fc452d3ca3640117af2135fea8df21ab3d06f530 data/minecraft/tags/item/axes.json
 2792dc8c7707f488dd1d246dad99cf11a4d37a75 data/minecraft/tags/item/hoes.json
+e13d46e88295171cefb0681d150b58d43d898f01 data/minecraft/tags/item/logs_that_burn.json
 f5eb30c762cf3dcb996dc4a427ba2acb8a4ec697 data/minecraft/tags/item/pickaxes.json
+6779e8a9c830e2a8d860658cd49dab7a132e3a77 data/minecraft/tags/item/planks.json
 d4af0e43673c141014a61e4137fe0a195e3d1028 data/minecraft/tags/item/shovels.json
 b134630555dbaaeee239a95b669c817aba1a37a3 data/minecraft/tags/item/swords.json
 26d40c52de076eaa15c0b209f3cb51c526598f5c data/minecraft/tags/item/trimmable_armor.json
 d3370da0c18c8a19cfade6324d2797eba8160849 data/minecraft/tags/item/trim_materials.json
 b4e849df0f4a17b0f9688401a10162aa9290f122 data/minecraft/tags/item/trim_templates.json
+685389e33a26fcff6e7dc8e30f313225f194b215 data/test_mod/tags/item/bloodwood_logs.json
 c6b3521e933e00cd35ca901b2ef8511ff44c29fe data/test_mod/tags/item/transformable_items.json

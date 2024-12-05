@@ -6,7 +6,6 @@ import fr.silenthill99.test_mod.utils.ModTags;
 import net.minecraft.core.HolderLookup;
 import net.minecraft.data.PackOutput;
 import net.minecraft.data.tags.ItemTagsProvider;
-import net.minecraft.tags.BlockTags;
 import net.minecraft.tags.ItemTags;
 import net.minecraft.world.item.Items;
 import net.minecraft.world.level.block.Block;
@@ -66,6 +65,13 @@ public class ItemTagsGenerator extends ItemTagsProvider {
 
         tag(ItemTags.PLANKS).add(
                 ModBlocks.BLOODWOOD_PLANKS.asItem()
+        );
+
+        tag(ModTags.ModItemTags.BLOODWOOD_LOGS).add(
+                ModBlocks.BLOODWOOD_LOG.asItem(),
+                ModBlocks.STRIPPED_BLOODWOOD_LOG.asItem(),
+                ModBlocks.BLOODWOOD_WOOD.asItem(),
+                ModBlocks.STRIPPED_BLOODWOOD_WOOD.asItem()
         );
     }
 }

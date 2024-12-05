@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "building",
+  "ingredients": [
+    {
+      "tag": "test_mod:bloodwood_logs"
+    }
+  ],
+  "result": {
+    "count": 4,
+    "id": "test_mod:bloodwood_planks"
+  }
+}

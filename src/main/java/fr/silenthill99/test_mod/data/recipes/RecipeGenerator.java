@@ -3,6 +3,7 @@ package fr.silenthill99.test_mod.data.recipes;
 import fr.silenthill99.test_mod.Main;
 import fr.silenthill99.test_mod.init.ModBlocks;
 import fr.silenthill99.test_mod.init.ModItems;
+import fr.silenthill99.test_mod.utils.ModTags;
 import net.minecraft.advancements.critereon.InventoryChangeTrigger;
 import net.minecraft.core.HolderLookup;
 import net.minecraft.data.PackOutput;
@@ -56,6 +57,25 @@ public class RecipeGenerator extends RecipeProvider implements IConditionBuilder
                 .unlockedBy(getItemName(ModItems.BISMUTH_HAMMER), InventoryChangeTrigger.TriggerInstance.hasItems(ModItems.BISMUTH, Items.STICK))
                 .save(recipeOutput);
         trimSmithing(recipeOutput, ModItems.SILENT_SMITHING_TEMPLATE.get(), ResourceLocation.fromNamespaceAndPath(Main.MODID, "silent"));
+
+        ShapelessRecipeBuilder.shapeless(RecipeCategory.BUILDING_BLOCKS, ModBlocks.BLOODWOOD_PLANKS, 4)
+                .requires(ModTags.ModItemTags.BLOODWOOD_LOGS)
+                .unlockedBy("unlock", has(ModTags.ModItemTags.BLOODWOOD_LOGS))
+                .save(recipeOutput);
+
+        ShapedRecipeBuilder.shaped(RecipeCategory.BUILDING_BLOCKS, ModBlocks.BLOODWOOD_WOOD, 3)
+                .pattern("##")
+                .pattern("##")
+                .define('#', ModBlocks.BLOODWOOD_LOG)
+                .unlockedBy("unlock", has(ModBlocks.BLOODWOOD_LOG))
+                .save(recipeOutput);
+
+        ShapedRecipeBuilder.shaped(RecipeCategory.BUILDING_BLOCKS, ModBlocks.STRIPPED_BLOODWOOD_WOOD, 3)
+                .pattern("##")
+                .pattern("##")
+                .define('#', ModBlocks.STRIPPED_BLOODWOOD_LOG)
+                .unlockedBy("unlock", has(ModBlocks.STRIPPED_BLOODWOOD_LOG))
+                .save(recipeOutput);
     }
 
     protected static void oreSmelting(

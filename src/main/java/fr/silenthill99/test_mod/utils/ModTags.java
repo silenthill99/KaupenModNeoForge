@@ -21,6 +21,7 @@ public class ModTags {
 
     public static class ModItemTags {
         public static final TagKey<Item> TRANSFORMABLE_ITEMS = createTag("transformable_items");
+        public static final TagKey<Item> BLOODWOOD_LOGS = createTag("bloodwood_logs");
 
         private static TagKey<Item> createTag(String name) {
             return ItemTags.create(ResourceLocation.fromNamespaceAndPath(Main.MODID, name));

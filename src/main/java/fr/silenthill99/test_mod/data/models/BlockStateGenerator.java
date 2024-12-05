@@ -56,7 +56,7 @@ public class BlockStateGenerator extends BlockStateProvider {
 
     public void saplingBlock(SaplingBlock block) {
         path = BuiltInRegistries.BLOCK.getKey(block).getPath();
-        simpleBlock(block, models().cross(path, blockTexture(block)).renderType("cutout"));
+        simpleBlockWithItem(block, models().cross(path, blockTexture(block)).renderType("cutout"));
     }
 
     public void leavesBlock(LeavesBlock block) {
@@ -140,9 +140,9 @@ public class BlockStateGenerator extends BlockStateProvider {
     }
 
     @Override
-    public void axisBlock(@NotNull RotatedPillarBlock block, @NotNull ResourceLocation baseName) {
-        super.axisBlock(block, baseName);
+    public void axisBlock(@NotNull RotatedPillarBlock block, @NotNull ResourceLocation side, @NotNull ResourceLocation end) {
+        super.axisBlock(block, side, end);
         path = BuiltInRegistries.BLOCK.getKey(block).getPath();
-        simpleBlockItem(block, new ModelFile.UncheckedModelFile(baseName));
+        simpleBlockItem(block, new ModelFile.UncheckedModelFile(modLoc("block/"+path)));
     }
 }

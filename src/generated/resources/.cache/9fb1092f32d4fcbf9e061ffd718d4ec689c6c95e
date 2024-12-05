@@ -1,4 +1,7 @@
-// 1.21	2024-10-26T19:49:30.3241008	Recipes
+// 1.21	2024-12-05T22:04:15.7447026	Recipes
+7dd2cd3de3a87ae952d087b324a46507c61e860e data/test_mod/advancement/recipes/building_blocks/bloodwood_planks.json
+af631cb4907f44c7be09bcffb54488cfae03c1c4 data/test_mod/advancement/recipes/building_blocks/bloodwood_wood.json
+c9f6efac5fc6453509b78d9a7b69f431561a32eb data/test_mod/advancement/recipes/building_blocks/stripped_bloodwood_wood.json
 fff042fa6e8eaf5688016945494c0646ecb8396b data/test_mod/advancement/recipes/misc/bismuth.json
 5e7a12a0f3007e0c42e04d2f0d8fd2326979ca8f data/test_mod/advancement/recipes/misc/bismuth_block.json
 f3b1ebf0acb8df6688871751038d3eb8d269e2b0 data/test_mod/advancement/recipes/misc/bismuth_from_blasting_bismuth_deepslate_ore.json
@@ -18,4 +21,7 @@ aeb27c8e753aa80f87b845044acbadfd8673345d data/test_mod/recipe/bismuth_from_blast
 8ecc242d90d86cdaa116b06a863fc412492ac4e6 data/test_mod/recipe/bismuth_from_smelting_bismuth_ore.json
 d9c7a93f5f5ae1f80f03a0c443aa0e8d0de2807c data/test_mod/recipe/bismuth_from_smelting_raw_bismuth.json
 9e56b61cf877c9eafbd783756b200ed9dc66ea39 data/test_mod/recipe/bismuth_hammer.json
+99ae2ab6b40d74be6919552734a5acacb10093c9 data/test_mod/recipe/bloodwood_planks.json
+381ad3a5888a3beb5cddf2689427d818bb9e4a4a data/test_mod/recipe/bloodwood_wood.json
 8eb7ad4c1c990a54a9a0bb2a179c3d95493b7ffd data/test_mod/recipe/silent.json
+8ba5e339d6e149c06ec0d8d57780b6094075987c data/test_mod/recipe/stripped_bloodwood_wood.json
