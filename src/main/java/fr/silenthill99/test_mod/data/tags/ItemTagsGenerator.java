@@ -1,10 +1,12 @@
 package fr.silenthill99.test_mod.data.tags;
 
+import fr.silenthill99.test_mod.init.ModBlocks;
 import fr.silenthill99.test_mod.init.ModItems;
 import fr.silenthill99.test_mod.utils.ModTags;
 import net.minecraft.core.HolderLookup;
 import net.minecraft.data.PackOutput;
 import net.minecraft.data.tags.ItemTagsProvider;
+import net.minecraft.tags.BlockTags;
 import net.minecraft.tags.ItemTags;
 import net.minecraft.world.item.Items;
 import net.minecraft.world.level.block.Block;
@@ -53,6 +55,17 @@ public class ItemTagsGenerator extends ItemTagsProvider {
         );
         tag(ItemTags.TRIM_TEMPLATES).add(
                 ModItems.SILENT_SMITHING_TEMPLATE.get()
+        );
+
+        tag(ItemTags.LOGS_THAT_BURN).add(
+                ModBlocks.BLOODWOOD_LOG.asItem(),
+                ModBlocks.BLOODWOOD_WOOD.asItem(),
+                ModBlocks.STRIPPED_BLOODWOOD_LOG.asItem(),
+                ModBlocks.STRIPPED_BLOODWOOD_WOOD.asItem()
+        );
+
+        tag(ItemTags.PLANKS).add(
+                ModBlocks.BLOODWOOD_PLANKS.asItem()
         );
     }
 }

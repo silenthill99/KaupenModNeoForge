@@ -41,6 +41,28 @@ public class BlockStateGenerator extends BlockStateProvider {
         customLamp();
         simpleBlockWithItem(ModBlocks.BISMUTH_END_ORE.get(), cubeAll(ModBlocks.BISMUTH_END_ORE.get()));
         simpleBlockWithItem(ModBlocks.BISMUTH_NETHER_ORE.get(), cubeAll(ModBlocks.BISMUTH_NETHER_ORE.get()));
+
+        logBlock(ModBlocks.BLOODWOOD_LOG.get());
+        axisBlock(ModBlocks.BLOODWOOD_WOOD.get(), blockTexture(ModBlocks.BLOODWOOD_LOG.get()), blockTexture(ModBlocks.BLOODWOOD_LOG.get()));
+        logBlock(ModBlocks.STRIPPED_BLOODWOOD_LOG.get());
+        axisBlock(ModBlocks.STRIPPED_BLOODWOOD_WOOD.get(), blockTexture(ModBlocks.STRIPPED_BLOODWOOD_LOG.get()), blockTexture(ModBlocks.STRIPPED_BLOODWOOD_LOG.get()));
+
+        simpleBlockWithItem(ModBlocks.BLOODWOOD_PLANKS.get(), cubeAll(ModBlocks.BLOODWOOD_PLANKS.get()));
+
+        saplingBlock((SaplingBlock) ModBlocks.BLOODWOOD_SAPLING.get());
+
+        leavesBlock((LeavesBlock) ModBlocks.BLOODWOOD_LEAVES.get());
+    }
+
+    public void saplingBlock(SaplingBlock block) {
+        path = BuiltInRegistries.BLOCK.getKey(block).getPath();
+        simpleBlock(block, models().cross(path, blockTexture(block)).renderType("cutout"));
+    }
+
+    public void leavesBlock(LeavesBlock block) {
+        path = BuiltInRegistries.BLOCK.getKey(block).getPath();
+        simpleBlockWithItem(block, models().singleTexture(path, ResourceLocation.parse("minecraft:block/leaves"),
+                "all", blockTexture(block)).renderType("cutout"));
     }
 
     @Override
@@ -108,5 +130,19 @@ public class BlockStateGenerator extends BlockStateProvider {
            }
         });
         simpleBlockItem(ModBlocks.BISMUTH_LAMP.get(), models().cubeAll("bismuth_lamp_on", modLoc("block/bismuth_lamp_on")));
+    }
+
+    @Override
+    public void logBlock(@NotNull RotatedPillarBlock block) {
+        super.logBlock(block);
+        path = BuiltInRegistries.BLOCK.getKey(block).getPath();
+        simpleBlockItem(block, new ModelFile.UncheckedModelFile(modLoc("block/" + path)));
+    }
+
+    @Override
+    public void axisBlock(@NotNull RotatedPillarBlock block, @NotNull ResourceLocation baseName) {
+        super.axisBlock(block, baseName);
+        path = BuiltInRegistries.BLOCK.getKey(block).getPath();
+        simpleBlockItem(block, new ModelFile.UncheckedModelFile(baseName));
     }
 }

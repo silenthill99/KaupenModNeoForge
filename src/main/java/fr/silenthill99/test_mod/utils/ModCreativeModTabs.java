@@ -66,6 +66,13 @@ public class ModCreativeModTabs {
                         output.accept(ModBlocks.BISMUTH_LAMP);
                         output.accept(ModBlocks.BISMUTH_END_ORE);
                         output.accept(ModBlocks.BISMUTH_NETHER_ORE);
+                        output.accept(ModBlocks.BLOODWOOD_LOG);
+                        output.accept(ModBlocks.BLOODWOOD_WOOD);
+                        output.accept(ModBlocks.STRIPPED_BLOODWOOD_LOG);
+                        output.accept(ModBlocks.STRIPPED_BLOODWOOD_WOOD);
+                        output.accept(ModBlocks.BLOODWOOD_PLANKS);
+                        output.accept(ModBlocks.BLOODWOOD_LEAVES);
+                        output.accept(ModBlocks.BLOODWOOD_SAPLING);
                     })
                     .withTabsBefore(ResourceLocation.fromNamespaceAndPath(Main.MODID, "bismuth_items_tab"))
                     .build());

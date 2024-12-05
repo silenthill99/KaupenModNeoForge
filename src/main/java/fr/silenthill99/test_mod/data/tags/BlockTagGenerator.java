@@ -51,5 +51,12 @@ public class BlockTagGenerator extends BlockTagsProvider {
                 .addTag(BlockTags.INCORRECT_FOR_IRON_TOOL)
                 .remove(ModTags.ModBlockTags.NEEDS_BISMUTH_TOOL);
 
+        tag(BlockTags.LOGS_THAT_BURN).add(
+                ModBlocks.BLOODWOOD_LOG.get(),
+                ModBlocks.BLOODWOOD_WOOD.get(),
+                ModBlocks.STRIPPED_BLOODWOOD_LOG.get(),
+                ModBlocks.STRIPPED_BLOODWOOD_WOOD.get()
+
+        );
     }
 }

@@ -45,6 +45,15 @@ public class BlockLootTables extends BlockLootSubProvider {
         dropSelf(ModBlocks.BISMUTH_LAMP.get());
         add(ModBlocks.BISMUTH_END_ORE.get(), block -> createDropLikeCopperOre(block, ModItems.RAW_BISMUTH.get(), 3, 6));
         add(ModBlocks.BISMUTH_NETHER_ORE.get(), block -> createDropLikeCopperOre(block, ModItems.RAW_BISMUTH.get(), 4, 8));
+
+        dropSelf(ModBlocks.BLOODWOOD_LOG.get());
+        dropSelf(ModBlocks.STRIPPED_BLOODWOOD_LOG.get());
+        dropSelf(ModBlocks.BLOODWOOD_WOOD.get());
+        dropSelf(ModBlocks.STRIPPED_BLOODWOOD_LOG.get());
+        dropSelf(ModBlocks.BLOODWOOD_PLANKS.get());
+        dropSelf(ModBlocks.BLOODWOOD_SAPLING.get());
+
+        add(ModBlocks.BLOODWOOD_LEAVES.get(), block -> createLeavesDrops(block, ModBlocks.BLOODWOOD_SAPLING.get(), NORMAL_LEAVES_SAPLING_CHANCES));
     }
 
     @Override
