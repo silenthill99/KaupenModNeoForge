@@ -5,7 +5,7 @@ import fr.silenthill99.test_mod.trim.ModTrimMaterial;
 import fr.silenthill99.test_mod.trim.ModTrimPattern;
 import fr.silenthill99.test_mod.worldgen.ModBiomeModifiers;
 import fr.silenthill99.test_mod.worldgen.ModConfiguredFeatures;
-import fr.silenthill99.test_mod.worldgen.ModPlaceFeatures;
+import fr.silenthill99.test_mod.worldgen.ModPlacedFeatures;
 import net.minecraft.core.HolderLookup;
 import net.minecraft.core.RegistrySetBuilder;
 import net.minecraft.core.registries.Registries;
@@ -23,7 +23,7 @@ public class DatapackGenerator extends DatapackBuiltinEntriesProvider {
             .add(Registries.TRIM_PATTERN, ModTrimPattern::bootstrap)
 
             .add(Registries.CONFIGURED_FEATURE, ModConfiguredFeatures::bootstrap)
-            .add(Registries.PLACED_FEATURE, ModPlaceFeatures::bootstrap)
+            .add(Registries.PLACED_FEATURE, ModPlacedFeatures::bootstrap)
             .add(NeoForgeRegistries.Keys.BIOME_MODIFIERS, ModBiomeModifiers::bootstrap);
 
     public DatapackGenerator(PackOutput output, CompletableFuture<HolderLookup.Provider> registries) {

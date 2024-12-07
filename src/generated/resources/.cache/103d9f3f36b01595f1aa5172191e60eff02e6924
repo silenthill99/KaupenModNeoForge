@@ -1,7 +1,8 @@
-// 1.21	2024-12-05T20:44:56.3287968	Registries
+// 1.21	2024-12-07T10:42:43.4642844	Registries
 604cbd1e9441e38f898ffd3f2b389e7bdd2d2d55 data/test_mod/neoforge/biome_modifier/add_bismuth_ore.json
 47aa70d5a02ab6bc5139dc2475cf7605fc1c3c00 data/test_mod/neoforge/biome_modifier/add_end_bismuth_ore.json
 d5c2b56c1c9412c00d88cb07d231f4ae887fd637 data/test_mod/neoforge/biome_modifier/add_nether_bismuth_ore.json
+e3c43a9cfb802b9ab88b0fd0efea36e143c85897 data/test_mod/neoforge/biome_modifier/add_tree_bloodwood.json
 a38875a2ea7da4f79566510e58dbea134de74d62 data/test_mod/trim_material/bismuth.json
 ba80e0dcc31bd7b9e1381e5ee52e1091b9d1efac data/test_mod/trim_pattern/silent.json
 87c5cac2af3fcd875fa96da70a30ba54e04ec662 data/test_mod/worldgen/configured_feature/bismuth_ore.json
@@ -9,5 +10,6 @@ ba80e0dcc31bd7b9e1381e5ee52e1091b9d1efac data/test_mod/trim_pattern/silent.json
 6bbabc81949178356c9b8c2a778bbb4f74a29c67 data/test_mod/worldgen/configured_feature/end_bismuth_ore.json
 3399d63b0c1f41c968b7d2fc73c2258e0d913b38 data/test_mod/worldgen/configured_feature/nether_bismuth_ore.json
 2a780af6029728cbb1f2a2a9ac67eeae9de18103 data/test_mod/worldgen/placed_feature/bismuth_ore_placed.json
+56a81bf9abce4f2d063d7e7c90052ba8ad09b0d9 data/test_mod/worldgen/placed_feature/bloodwood_placed.json
 0f32f0ea2096724247565c6f021bf117ca7398e3 data/test_mod/worldgen/placed_feature/end_bismuth_ore_placed.json
 e88d907e5ab6340086454b0ba3548f5b0cab4f0d data/test_mod/worldgen/placed_feature/nether_bismuth_ore_placed.json
