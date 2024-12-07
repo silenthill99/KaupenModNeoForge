@@ -36,10 +36,10 @@ public class ModFlammableRotatedPillarBlock extends RotatedPillarBlock {
     @Override
     public @Nullable BlockState getToolModifiedState(@NotNull BlockState state, UseOnContext context, @NotNull ItemAbility itemAbility, boolean simulate) {
         if (context.getItemInHand().getItem() instanceof AxeItem) {
-            if (state.is(ModBlocks.BLOODWOOD_LOG)) {
+            if (state.is(ModBlocks.BLOODWOOD_LOG.get())) {
                 return ModBlocks.STRIPPED_BLOODWOOD_LOG.get().defaultBlockState().setValue(AXIS, state.getValue(AXIS));
             }
-            if (state.is(ModBlocks.BLOODWOOD_WOOD)) {
+            if (state.is(ModBlocks.BLOODWOOD_WOOD.get())) {
                 return ModBlocks.STRIPPED_BLOODWOOD_WOOD.get().defaultBlockState().setValue(AXIS, state.getValue(AXIS));
             }
         }
