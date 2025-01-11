@@ -2,10 +2,13 @@ package fr.silenthill99.test_mod;
 
 import com.mojang.logging.LogUtils;
 import fr.silenthill99.test_mod.components.ModDataComponents;
+import fr.silenthill99.test_mod.custom.entities.renderer.ChairRenderer;
 import fr.silenthill99.test_mod.init.ModBlocks;
+import fr.silenthill99.test_mod.init.ModEntities;
 import fr.silenthill99.test_mod.init.ModItems;
 import fr.silenthill99.test_mod.utils.ModCreativeModTabs;
 import fr.silenthill99.test_mod.utils.ModSoundEvents;
+import net.minecraft.client.renderer.entity.EntityRenderers;
 import net.minecraft.world.item.CreativeModeTabs;
 import net.neoforged.api.distmarker.Dist;
 import net.neoforged.bus.api.IEventBus;
@@ -38,6 +41,7 @@ public class Main {
         ModCreativeModTabs.CREATIVE_MODE_TABS.register(modEventBus);
         ModDataComponents.DATA_COMPONENT_TYPES.register(modEventBus);
         ModSoundEvents.SOUNDS.register(modEventBus);
+        ModEntities.ENTITIES.register(modEventBus);
     }
 
     private void commonSetup(final FMLCommonSetupEvent event) {
@@ -72,7 +76,7 @@ public class Main {
     public static class ClientModEvents {
         @SubscribeEvent
         public static void onClientSetup(FMLClientSetupEvent event) {
-
+            EntityRenderers.register(ModEntities.CHAIR_ENTITY.get(), ChairRenderer::new);
         }
     }
 }
