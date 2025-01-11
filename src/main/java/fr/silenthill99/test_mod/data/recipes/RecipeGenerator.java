@@ -9,6 +9,7 @@ import net.minecraft.core.HolderLookup;
 import net.minecraft.data.PackOutput;
 import net.minecraft.data.recipes.*;
 import net.minecraft.resources.ResourceLocation;
+import net.minecraft.tags.ItemTags;
 import net.minecraft.world.item.Items;
 import net.minecraft.world.item.crafting.*;
 import net.minecraft.world.level.ItemLike;
@@ -75,6 +76,14 @@ public class RecipeGenerator extends RecipeProvider implements IConditionBuilder
                 .pattern("##")
                 .define('#', ModBlocks.STRIPPED_BLOODWOOD_LOG)
                 .unlockedBy("unlock", has(ModBlocks.STRIPPED_BLOODWOOD_LOG))
+                .save(recipeOutput);
+
+        ShapedRecipeBuilder.shaped(RecipeCategory.BUILDING_BLOCKS, ModBlocks.CHAIR)
+                .pattern("#  ")
+                .pattern("###")
+                .pattern("# #")
+                .define('#', ItemTags.PLANKS)
+                .unlockedBy("unlock", has(ItemTags.PLANKS))
                 .save(recipeOutput);
     }
 

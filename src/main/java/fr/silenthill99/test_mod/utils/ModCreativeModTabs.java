@@ -73,6 +73,7 @@ public class ModCreativeModTabs {
                         output.accept(ModBlocks.BLOODWOOD_PLANKS);
                         output.accept(ModBlocks.BLOODWOOD_LEAVES);
                         output.accept(ModBlocks.BLOODWOOD_SAPLING);
+                        output.accept(ModBlocks.CHAIR);
                     })
                     .withTabsBefore(ResourceLocation.fromNamespaceAndPath(Main.MODID, "bismuth_items_tab"))
                     .build());

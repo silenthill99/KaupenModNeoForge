@@ -1,4 +1,4 @@
-// 1.21	2024-12-05T21:11:28.9176949	Block States: test_mod
+// 1.21	2025-01-11T14:44:04.3601395	Block States: test_mod
 58ed7eb71cc008b51e2fed4384e0a74ef39b20f0 assets/test_mod/blockstates/bismuth_block.json
 fac9a5a99eadf697246f277fb7d55ed23235d3a6 assets/test_mod/blockstates/bismuth_button.json
 295b2d1b462d1aeb8c2f36839e8f077a7d6876b3 assets/test_mod/blockstates/bismuth_deepslate_ore.json
@@ -19,6 +19,7 @@ fbce6bd9a08808cc667586ff884417e70d10b675 assets/test_mod/blockstates/bloodwood_l
 42b07bc258895883b58874847db8489cd9cf5a86 assets/test_mod/blockstates/bloodwood_planks.json
 c509938404f65ce66cc2aaabeca2f13d59eacb0f assets/test_mod/blockstates/bloodwood_sapling.json
 aa85b8cae13ce273f2fef801ca8ea476e837a84b assets/test_mod/blockstates/bloodwood_wood.json
+cb2c089602bbc930ecdc50a90e0759e086e91163 assets/test_mod/blockstates/chair.json
 d58112f2a12c817abdd2b1ddddcfaaf4c102efae assets/test_mod/blockstates/magic_block.json
 33cf96b7b5d2ed08f67781da0a07c238a26ea3dc assets/test_mod/blockstates/stripped_bloodwood_log.json
 25782a245e593c5a49891dd0f86b7edec02d550b assets/test_mod/blockstates/stripped_bloodwood_wood.json
@@ -92,6 +93,7 @@ f76e8aeea3783b6e47bf38a2d75fffe39ac19218 assets/test_mod/models/item/bismuth_pre
 a245082c716624ee903fbb2cf84b52aecf959b20 assets/test_mod/models/item/bloodwood_planks.json
 17dcefd544f02294740c09d34df9ac11c645caba assets/test_mod/models/item/bloodwood_sapling.json
 60e49e942301803ad384cd3982f99bce68e76d1f assets/test_mod/models/item/bloodwood_wood.json
+20af2bd653d32122bde8571eb8f42b7ca27b3b40 assets/test_mod/models/item/chair.json
 6381b30856cf49503a0bf0adbc43d07f0b66184f assets/test_mod/models/item/magic_block.json
 c0741976eb8b9e7d75eb5f49d1b0a52e3cc1d7b8 assets/test_mod/models/item/stripped_bloodwood_log.json
 4df61781b860e2f70ef1b4f3495752cf07885789 assets/test_mod/models/item/stripped_bloodwood_wood.json

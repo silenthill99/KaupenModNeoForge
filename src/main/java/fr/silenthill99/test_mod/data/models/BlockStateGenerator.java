@@ -52,11 +52,18 @@ public class BlockStateGenerator extends BlockStateProvider {
         saplingBlock((SaplingBlock) ModBlocks.BLOODWOOD_SAPLING.get());
 
         leavesBlock((LeavesBlock) ModBlocks.BLOODWOOD_LEAVES.get());
+        horizontalBlock(ModBlocks.CHAIR.get(), new ModelFile.UncheckedModelFile(modLoc("block/" + ModBlocks.CHAIR.getId().getPath())));
     }
 
     public void saplingBlock(SaplingBlock block) {
         path = BuiltInRegistries.BLOCK.getKey(block).getPath();
         simpleBlockWithItem(block, models().cross(path, blockTexture(block)).renderType("cutout"));
+    }
+
+    @Override
+    public void horizontalBlock(@NotNull Block block, @NotNull ModelFile model) {
+        super.horizontalBlock(block, model);
+        simpleBlockItem(block, model);
     }
 
     public void leavesBlock(LeavesBlock block) {

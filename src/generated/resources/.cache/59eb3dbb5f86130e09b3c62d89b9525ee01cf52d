@@ -1,4 +1,4 @@
-// 1.21	2024-12-05T20:44:56.2859139	Loot Tables
+// 1.21	2025-01-11T14:37:41.0767092	Loot Tables
 caa679f3d31298e25a57176b2a6f3fe31f32ac33 data/test_mod/loot_table/blocks/bismuth_block.json
 b42138d82e1e31fe533bc88f5945e795aa20cdd6 data/test_mod/loot_table/blocks/bismuth_button.json
 84c85157d4deadaa9a770e80aa5984cbe45954c3 data/test_mod/loot_table/blocks/bismuth_deepslate_ore.json
@@ -19,6 +19,7 @@ b88aa8152fc62df369fb9638d7df11feda744fbd data/test_mod/loot_table/blocks/bloodwo
 4fad2c668fa0b07a482839b459fad7a7d209163f data/test_mod/loot_table/blocks/bloodwood_planks.json
 52b6c5a4156464bfca8a9094f50e6b5bf485f9ce data/test_mod/loot_table/blocks/bloodwood_sapling.json
 c0d3680b9c98c32feaa71c08a29a586659725174 data/test_mod/loot_table/blocks/bloodwood_wood.json
+959954d711b453c32b7e4cf63fc520b123d510ce data/test_mod/loot_table/blocks/chair.json
 0ccea3d0b402e49e9d212c55352398ef832881b8 data/test_mod/loot_table/blocks/magic_block.json
 e88e2f37fa9bb4276b4720553ecfc38f8281c2de data/test_mod/loot_table/blocks/stripped_bloodwood_log.json
 6e9991028ae7343b4645bf75d779397b9a6f598e data/test_mod/loot_table/blocks/stripped_bloodwood_wood.json
