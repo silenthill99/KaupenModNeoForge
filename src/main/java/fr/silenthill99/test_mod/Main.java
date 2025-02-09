@@ -3,6 +3,7 @@ package fr.silenthill99.test_mod;
 import com.mojang.logging.LogUtils;
 import fr.silenthill99.test_mod.components.ModDataComponents;
 import fr.silenthill99.test_mod.custom.entities.renderer.ChairRenderer;
+import fr.silenthill99.test_mod.custom.entities.renderer.GeckoRenderer;
 import fr.silenthill99.test_mod.init.ModBlocks;
 import fr.silenthill99.test_mod.init.ModEntities;
 import fr.silenthill99.test_mod.init.ModItems;
@@ -77,6 +78,7 @@ public class Main {
         @SubscribeEvent
         public static void onClientSetup(FMLClientSetupEvent event) {
             EntityRenderers.register(ModEntities.CHAIR_ENTITY.get(), ChairRenderer::new);
+            EntityRenderers.register(ModEntities.GECKO.get(), GeckoRenderer::new);
         }
     }
 }

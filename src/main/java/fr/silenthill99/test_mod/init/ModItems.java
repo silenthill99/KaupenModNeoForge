@@ -12,6 +12,7 @@ import fr.silenthill99.test_mod.utils.ModToolTiers;
 import net.minecraft.network.chat.Component;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.world.item.*;
+import net.neoforged.neoforge.common.DeferredSpawnEggItem;
 import net.neoforged.neoforge.registries.DeferredItem;
 import net.neoforged.neoforge.registries.DeferredRegister;
 import org.jetbrains.annotations.NotNull;
@@ -90,4 +91,7 @@ public class ModItems {
 
     public static final DeferredItem<Item> BAR_BRAWL_MUSIC_DISC = ITEMS.register("bar_brawl_music_disc",
             () -> new Item(new Item.Properties().jukeboxPlayable(ModSoundEvents.convertToJukeboxSong(ModSoundEvents.BAR_BRAWL)).stacksTo(1)));
+
+    public static final DeferredItem<Item> GECKO_SPAWN_EGG = ITEMS.register("gecko_spawn_egg",
+            () -> new DeferredSpawnEggItem(ModEntities.GECKO, 0x31afaf, 0xffac00, new Item.Properties()));
 }

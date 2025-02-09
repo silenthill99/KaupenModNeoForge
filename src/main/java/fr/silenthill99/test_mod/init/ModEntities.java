@@ -2,6 +2,7 @@ package fr.silenthill99.test_mod.init;
 
 import fr.silenthill99.test_mod.Main;
 import fr.silenthill99.test_mod.custom.entities.ChairEntity;
+import fr.silenthill99.test_mod.custom.entities.GeckoEntity;
 import net.minecraft.core.registries.BuiltInRegistries;
 import net.minecraft.world.entity.EntityType;
 import net.minecraft.world.entity.MobCategory;
@@ -17,5 +18,9 @@ public class ModEntities {
     public static final Supplier<EntityType<ChairEntity>> CHAIR_ENTITY =
             ENTITIES.register("chair_entity", () -> EntityType.Builder.of(ChairEntity::new, MobCategory.MISC)
                     .sized(0.5f, 0.5f).build("chair_entity"));
+
+    public static final Supplier<EntityType<GeckoEntity>> GECKO = ENTITIES.register("gecko",
+            () -> EntityType.Builder.of(GeckoEntity::new, MobCategory.CREATURE).sized(0.75f, 0.35f)
+                    .build("gecko"));
 
 }

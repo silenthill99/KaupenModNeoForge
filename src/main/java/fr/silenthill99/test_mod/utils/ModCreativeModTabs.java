@@ -42,6 +42,7 @@ public class ModCreativeModTabs {
                         output.accept(ModItems.BISMUTH_HORSE_ARMOR);
                         output.accept(ModItems.SILENT_SMITHING_TEMPLATE);
                         output.accept(ModItems.BAR_BRAWL_MUSIC_DISC);
+                        output.accept(ModItems.GECKO_SPAWN_EGG);
                     })
                     .build());
 

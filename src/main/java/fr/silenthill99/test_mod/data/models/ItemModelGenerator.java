@@ -3,6 +3,7 @@ package fr.silenthill99.test_mod.data.models;
 import fr.silenthill99.test_mod.Main;
 import fr.silenthill99.test_mod.init.ModBlocks;
 import fr.silenthill99.test_mod.init.ModItems;
+import net.minecraft.core.registries.BuiltInRegistries;
 import net.minecraft.data.PackOutput;
 import net.minecraft.resources.ResourceKey;
 import net.minecraft.resources.ResourceLocation;
@@ -13,6 +14,7 @@ import net.minecraft.world.item.armortrim.TrimMaterial;
 import net.minecraft.world.item.armortrim.TrimMaterials;
 import net.neoforged.neoforge.client.model.generators.ItemModelProvider;
 import net.neoforged.neoforge.client.model.generators.ModelFile;
+import net.neoforged.neoforge.common.DeferredSpawnEggItem;
 import net.neoforged.neoforge.common.data.ExistingFileHelper;
 import net.neoforged.neoforge.registries.DeferredItem;
 
@@ -60,6 +62,7 @@ public class ItemModelGenerator extends ItemModelProvider {
         basicItem(ModItems.BISMUTH_HORSE_ARMOR.get());
         basicItem(ModItems.SILENT_SMITHING_TEMPLATE.get());
         basicItem(ModItems.BAR_BRAWL_MUSIC_DISC.get());
+        spawnEggItem((DeferredSpawnEggItem) ModItems.GECKO_SPAWN_EGG.get());
     }
 
     private <T extends Item> void toolItem(DeferredItem<T> item) {
@@ -115,5 +118,9 @@ public class ItemModelGenerator extends ItemModelProvider {
                                         "item/" + itemDeferredItem.getId().getPath()));
             });
         }
+    }
+
+    private void spawnEggItem(DeferredSpawnEggItem item) {
+        withExistingParent(BuiltInRegistries.ITEM.getKey(item).getPath(), mcLoc("item/template_spawn_egg"));
     }
 }
