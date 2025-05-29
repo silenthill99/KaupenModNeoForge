@@ -1,4 +1,6 @@
-// 1.21	2024-12-07T10:42:43.4642844	Registries
+// 1.21	2025-05-29T13:33:56.1216342	Registries
+6dcf7b65fe416bc5613e2b3c5470632b0f7549bf data/test_mod/jukebox_song/bar_brawl.json
+ae8e70cd532b74ad26baa7869184356d0d9e2d86 data/test_mod/jukebox_song/sacrificed_flowers.json
 604cbd1e9441e38f898ffd3f2b389e7bdd2d2d55 data/test_mod/neoforge/biome_modifier/add_bismuth_ore.json
 47aa70d5a02ab6bc5139dc2475cf7605fc1c3c00 data/test_mod/neoforge/biome_modifier/add_end_bismuth_ore.json
 d5c2b56c1c9412c00d88cb07d231f4ae887fd637 data/test_mod/neoforge/biome_modifier/add_nether_bismuth_ore.json

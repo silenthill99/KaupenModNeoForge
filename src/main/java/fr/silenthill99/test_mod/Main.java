@@ -8,6 +8,7 @@ import fr.silenthill99.test_mod.init.ModBlocks;
 import fr.silenthill99.test_mod.init.ModEntities;
 import fr.silenthill99.test_mod.init.ModItems;
 import fr.silenthill99.test_mod.utils.ModCreativeModTabs;
+import fr.silenthill99.test_mod.utils.ModItemProperties;
 import fr.silenthill99.test_mod.utils.ModSoundEvents;
 import net.minecraft.client.renderer.entity.EntityRenderers;
 import net.minecraft.world.item.CreativeModeTabs;
@@ -79,6 +80,7 @@ public class Main {
         public static void onClientSetup(FMLClientSetupEvent event) {
             EntityRenderers.register(ModEntities.CHAIR_ENTITY.get(), ChairRenderer::new);
             EntityRenderers.register(ModEntities.GECKO.get(), GeckoRenderer::new);
+            ModItemProperties.addCustomProperties();
         }
     }
 }

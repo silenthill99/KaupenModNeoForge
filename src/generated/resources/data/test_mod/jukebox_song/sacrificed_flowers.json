@@ -3,6 +3,6 @@
   "description": {
     "translate": "jukebox.test_mod.sacrificed_flowers"
   },
-  "length_in_seconds": 5260,
+  "length_in_seconds": 5260.0,
   "sound_event": "test_mod:sacrificed_flowers"
 }

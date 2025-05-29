@@ -43,7 +43,7 @@ public class ItemModelGenerator extends ItemModelProvider {
     protected void registerModels() {
         basicItem(ModItems.BISMUTH.get());
         basicItem(ModItems.RAW_BISMUTH.get());
-        basicItem(ModItems.CHISEL.get());
+//        basicItem(ModItems.CHISEL.get());
         basicItem(ModItems.RADISH.get());
         basicItem(ModItems.FROSTFIRE_ICE.get());
         basicItem(ModItems.STARLIGHT_ASHES.get());
