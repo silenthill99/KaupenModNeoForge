@@ -66,6 +66,7 @@ public class GeckoEntity extends Animal {
 
     @Override
     public void tick() {
+        super.tick();
         if (this.level().isClientSide) {
             setupAnimationStates();
         }
