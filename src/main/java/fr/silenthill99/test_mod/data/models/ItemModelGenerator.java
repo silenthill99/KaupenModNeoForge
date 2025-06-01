@@ -9,9 +9,12 @@ import net.minecraft.resources.ResourceKey;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.server.packs.PackType;
 import net.minecraft.world.item.ArmorItem;
+import net.minecraft.world.item.BowItem;
 import net.minecraft.world.item.Item;
+import net.minecraft.world.item.ItemDisplayContext;
 import net.minecraft.world.item.armortrim.TrimMaterial;
 import net.minecraft.world.item.armortrim.TrimMaterials;
+import net.neoforged.neoforge.client.model.generators.ItemModelBuilder;
 import net.neoforged.neoforge.client.model.generators.ItemModelProvider;
 import net.neoforged.neoforge.client.model.generators.ModelFile;
 import net.neoforged.neoforge.common.DeferredSpawnEggItem;
@@ -63,6 +66,7 @@ public class ItemModelGenerator extends ItemModelProvider {
         basicItem(ModItems.SILENT_SMITHING_TEMPLATE.get());
         basicItem(ModItems.BAR_BRAWL_MUSIC_DISC.get());
         spawnEggItem((DeferredSpawnEggItem) ModItems.GECKO_SPAWN_EGG.get());
+        bowWithDisplay((BowItem) ModItems.KAUPEN_BOW.get());
     }
 
     private <T extends Item> void toolItem(DeferredItem<T> item) {
@@ -122,5 +126,56 @@ public class ItemModelGenerator extends ItemModelProvider {
 
     private void spawnEggItem(DeferredSpawnEggItem item) {
         withExistingParent(BuiltInRegistries.ITEM.getKey(item).getPath(), mcLoc("item/template_spawn_egg"));
+    }
+
+    private void bowWithDisplay(BowItem item) {
+        String name = BuiltInRegistries.ITEM.getKey(item).getPath();
+        ItemModelBuilder builder = getBuilder(name)
+                .parent(new ModelFile.UncheckedModelFile("item/generated"))
+                .texture("layer0", modLoc("item/" + name))
+                .transforms()
+                .transform(ItemDisplayContext.THIRD_PERSON_RIGHT_HAND)
+                .rotation(-80F, 260F, -40F)
+                .translation(-1F, -2F, 2.5F)
+                .scale(0.9F)
+                .end()
+                .transform(ItemDisplayContext.THIRD_PERSON_LEFT_HAND)
+                .rotation(-80F, -280F, 40F)
+                .translation(-1F, -2F, 2.5F)
+                .scale(0.9F)
+                .end()
+                .transform(ItemDisplayContext.FIRST_PERSON_RIGHT_HAND)
+                .rotation(0F, -90F, 25F)
+                .translation(1.13F, 3.2F, 1.13F)
+                .scale(0.68F)
+                .end()
+                .transform(ItemDisplayContext.FIRST_PERSON_LEFT_HAND)
+                .rotation(0F, 90F, -25F)
+                .translation(1.13F, 3.2F, 1.13F)
+                .scale(0.68F)
+                .end()
+                .end();
+
+        // Overrides (pulling states)
+        builder.override()
+                .predicate(mcLoc("pulling"), 1.0F)
+                .model(new ModelFile.UncheckedModelFile(modLoc("item/"  + name + "_pulling_0")))
+                .end()
+                .override()
+                .predicate(mcLoc("pulling"), 1.0F)
+                .predicate(mcLoc("pull"), 0.65F)
+                .model(new ModelFile.UncheckedModelFile(modLoc("item/" + name + "_pulling_1")))
+                .end()
+                .override()
+                .predicate(mcLoc("pulling"), 1.0F)
+                .predicate(mcLoc("pull"), 0.9F)
+                .model(new ModelFile.UncheckedModelFile(modLoc("item/" + name + "_pulling_2")))
+                .end();
+        for (int i = 0; i < 3; i++) {
+            String modelName = name + "_pulling_" + i;
+            getBuilder(modelName)
+                    .parent(new ModelFile.UncheckedModelFile("item/generated"))
+                    .texture("layer0", modLoc("item/" + modelName));
+        }
     }
 }

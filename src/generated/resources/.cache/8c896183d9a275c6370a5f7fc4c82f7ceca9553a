@@ -1,4 +1,4 @@
-// 1.21	2025-05-29T13:33:56.0788083	Item Models: test_mod
+// 1.21	2025-06-01T14:21:32.8048451	Item Models: test_mod
 979e22ffaa85e39918190b7d4f0b19e1010cd99b assets/test_mod/models/item/bar_brawl_music_disc.json
 f8a798d7b3ca106781e6a133458b50e5a10053f1 assets/test_mod/models/item/bismuth.json
 468b248073742aab3427936bd4d8b0039022fd4f assets/test_mod/models/item/bismuth_axe.json
@@ -55,6 +55,10 @@ dbffee09bc0a819066c3fa7322b3a793732068bd assets/test_mod/models/item/bismuth_leg
 16fdb7753cf40c95c92dcf21098e85142b9eb3ac assets/test_mod/models/item/bismuth_sword.json
 e5bf8155b0f81368de259174de3dc055dd83c830 assets/test_mod/models/item/frostfire_ice.json
 63ec6c618a3a23eab4cab9c52d7d3250de9b516e assets/test_mod/models/item/gecko_spawn_egg.json
+1f5aabe950735de33042c5ddd8f21053c1c4d484 assets/test_mod/models/item/kaupen_bow.json
+3694dd535beaa0d7960764901363f49424653e34 assets/test_mod/models/item/kaupen_bow_pulling_0.json
+6da8db03dad72e9dac6024215557095c38a174f7 assets/test_mod/models/item/kaupen_bow_pulling_1.json
+b61fda6aac3012fba655b8b277f572245ce29a9e assets/test_mod/models/item/kaupen_bow_pulling_2.json
 bd657a685695b07200cd311d7969c13bd43a5c20 assets/test_mod/models/item/radish.json
 ad780a10f5d238d15a3e420a6a8c169674a77109 assets/test_mod/models/item/raw_bismuth.json
 6782b24147ee8c451f5fe37d0081f613d271d007 assets/test_mod/models/item/sacrificed_flowers.json

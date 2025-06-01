@@ -43,6 +43,7 @@ public class ModCreativeModTabs {
                         output.accept(ModItems.SILENT_SMITHING_TEMPLATE);
                         output.accept(ModItems.BAR_BRAWL_MUSIC_DISC);
                         output.accept(ModItems.GECKO_SPAWN_EGG);
+                        output.accept(ModItems.KAUPEN_BOW);
                     })
                     .build());
 
