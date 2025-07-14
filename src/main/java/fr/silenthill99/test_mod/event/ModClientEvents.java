@@ -9,7 +9,7 @@ import net.neoforged.fml.common.EventBusSubscriber;
 import net.neoforged.neoforge.client.event.ComputeFovModifierEvent;
 
 @EventBusSubscriber(modid = Main.MODID, bus = EventBusSubscriber.Bus.GAME, value = Dist.CLIENT)
-public class ModClientEvets {
+public class ModClientEvents {
 
     // Pour modifier le zoom avec l'arc
     @SubscribeEvent
